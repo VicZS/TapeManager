@@ -36,6 +36,8 @@
             PBCerrar = new PictureBox();
             PanelLogoForvia = new Panel();
             PBLogoForvia = new PictureBox();
+            PanelMenu = new Panel();
+            PanelInterfaces = new Panel();
             PanelSuperior.SuspendLayout();
             PanelNombreApp.SuspendLayout();
             PanelControles.SuspendLayout();
@@ -144,17 +146,37 @@
             PBLogoForvia.SizeMode = PictureBoxSizeMode.StretchImage;
             PBLogoForvia.TabIndex = 0;
             PBLogoForvia.TabStop = false;
-            PBLogoForvia.MouseDown += ArrastrarVentana; ;
+            PBLogoForvia.MouseDown += ArrastrarVentana;
+            // 
+            // PanelMenu
+            // 
+            PanelMenu.Dock = DockStyle.Left;
+            PanelMenu.Location = new Point(0, 66);
+            PanelMenu.Name = "PanelMenu";
+            PanelMenu.Size = new Size(244, 654);
+            PanelMenu.TabIndex = 1;
+            // 
+            // PanelInterfaces
+            // 
+            PanelInterfaces.Dock = DockStyle.Right;
+            PanelInterfaces.Location = new Point(797, 66);
+            PanelInterfaces.Name = "PanelInterfaces";
+            PanelInterfaces.Size = new Size(483, 654);
+            PanelInterfaces.TabIndex = 2;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(9F, 23F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1280, 720);
+            Controls.Add(PanelInterfaces);
+            Controls.Add(PanelMenu);
             Controls.Add(PanelSuperior);
             FormBorderStyle = FormBorderStyle.None;
             Name = "Form1";
             Text = "Form1";
+            Load += Form1_Load;
+            Resize += Form1_Resize;
             PanelSuperior.ResumeLayout(false);
             PanelNombreApp.ResumeLayout(false);
             PanelNombreApp.PerformLayout();
@@ -176,5 +198,7 @@
         private PictureBox PBMinimizar;
         private Panel PanelNombreApp;
         private Label label1;
+        private Panel PanelMenu;
+        private Panel PanelInterfaces;
     }
 }

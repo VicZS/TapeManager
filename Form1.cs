@@ -1,5 +1,7 @@
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Window;
 using System.Runtime.InteropServices;
+using System.Drawing.Drawing2D;
+
 
 
 namespace TapeManager
@@ -63,10 +65,23 @@ namespace TapeManager
             }
         }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            int borderRadius = 30;
+            var path = new GraphicsPath();
+            path.AddArc(0, 0, borderRadius, borderRadius, 180, 90);
+            path.AddArc(this.Width - borderRadius, 0, borderRadius, borderRadius, 270, 90);
+            path.AddArc(this.Width - borderRadius, this.Height - borderRadius, borderRadius, borderRadius, 0, 90);
+            path.AddArc(0, this.Height - borderRadius, borderRadius, borderRadius, 90, 90);
+            path.CloseAllFigures();
 
+            this.Region = new Region(path);
+        }
 
-
-
+        private void Form1_Resize(object sender, EventArgs e)
+        {
+            Form1_Load(sender, e); 
+        }
 
     }
 }
