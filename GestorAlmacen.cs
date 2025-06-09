@@ -101,7 +101,7 @@ namespace TapeManager
             return true;
         }
 
-        // Crear cinta
+        
         public bool AgregarCintaAContenedor(string idContenedor, string idCinta, DateTime fechaCreacion)
         {
             if (IdCintaExiste(idCinta, fechaCreacion)) return false;
@@ -109,7 +109,13 @@ namespace TapeManager
             var contenedor = contenedores.FirstOrDefault(c => c.IdContenedor == idContenedor);
             if (contenedor == null) return false;
 
-            var nuevaCinta = new Cinta(idCinta, fechaCreacion);
+            
+            var nuevaCinta = new Cinta
+            {
+                IdCinta = idCinta,
+                FechaCreacion = fechaCreacion
+            };
+
             contenedor.Cintas.Add(nuevaCinta);
             GuardarDatos();
             return true;
@@ -168,9 +174,9 @@ namespace TapeManager
         }
 
         // Actualizar ID cinta
-        public bool ModificarIdCinta(string idActual, string nuevoId)
+        public bool ModificarIdCinta(string idActual, DateTime fecheCreacionActual, string nuevoId)
         {
-            if (IdCintaExiste(nuevoId)) return false;
+            if (IdCintaExiste(nuevoId, fecheCreacionActual)) return false;
 
             foreach (var cont in contenedores)
             {
