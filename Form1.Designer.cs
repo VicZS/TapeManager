@@ -206,8 +206,8 @@
             panel2.Controls.Add(btnAbrirInterfazEnviarContenedores);
             panel2.Controls.Add(btnAbrirInterfazReguardarCintas);
             panel2.Controls.Add(panel3);
-            panel2.Dock = DockStyle.Bottom;
-            panel2.Location = new Point(0, 389);
+            panel2.Dock = DockStyle.Top;
+            panel2.Location = new Point(0, 398);
             panel2.Name = "panel2";
             panel2.Padding = new Padding(30, 0, 8, 8);
             panel2.Size = new Size(281, 256);
@@ -478,8 +478,9 @@
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(9F, 23F);
-            AutoScaleMode = AutoScaleMode.Font;
+            AutoScaleDimensions = new SizeF(96F, 96F);
+            AutoScaleMode = AutoScaleMode.Dpi;
+            AutoSize = true;
             ClientSize = new Size(1280, 720);
             Controls.Add(PanelInterfaces);
             Controls.Add(PanelMenu);

@@ -93,9 +93,10 @@ namespace TapeManager
         }
 
         // Crear contenedor
-        public bool CrearContenedor(string id, DateTime? fechaCreacion = null)
+        public bool CrearContenedor(string id, DateTime? fechaCreacion)
         {
             if (IdContenedorExiste(id)) return false;
+
             contenedores.Add(new Contenedor(id, fechaCreacion: fechaCreacion));
             GuardarDatos();
             return true;
