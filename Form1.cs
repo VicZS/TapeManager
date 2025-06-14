@@ -37,7 +37,6 @@ namespace TapeManager
             PBCerrar.Image = Properties.Resources.boton_cerrar;
         }
 
-
         private void PBMinimizar_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
@@ -74,14 +73,7 @@ namespace TapeManager
 
             this.Region = new Region(path);
 
-            RedondearBoton(btnAbrirInterfazCintasActivas, 20);
-            RedondearBoton(btnAbrirInterfazCintasBoveda, 20);
-            RedondearBoton(btnAbrirInterfazContenedores, 20);
-            RedondearBoton(btnAbrirInterfazGenerarReporte, 20);
-            RedondearBoton(btnAbrirInterfazImprimirEtiquetas, 20);
-            RedondearBoton(btnAbrirInterfazReguardarCintas, 20);
-            RedondearBoton(btnAbrirInterfazEnviarContenedores, 20);
-
+         
         }
 
         private void Form1_Resize(object sender, EventArgs e)
@@ -90,22 +82,9 @@ namespace TapeManager
 
         }
 
-        private void RedondearBoton(Button btn, int radio)
-        {
-            GraphicsPath path = new GraphicsPath();
-            path.StartFigure();
-            path.AddArc(new Rectangle(0, 0, radio, radio), 180, 90);
-            path.AddArc(new Rectangle(btn.Width - radio, 0, radio, radio), 270, 90);
-            path.AddArc(new Rectangle(btn.Width - radio, btn.Height - radio, radio, radio), 0, 90);
-            path.AddArc(new Rectangle(0, btn.Height - radio, radio, radio), 90, 90);
-            path.CloseFigure();
+  
 
-            btn.Region = new Region(path);
-        }
 
-        private void PanelTituloMenuRegistros_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+        
     }
 }

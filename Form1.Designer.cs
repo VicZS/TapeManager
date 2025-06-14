@@ -32,46 +32,48 @@
             PanelNombreApp = new Panel();
             label1 = new Label();
             PanelControles = new Panel();
-            pictureBox3 = new PictureBox();
+            btnAjustes = new FontAwesome.Sharp.IconPictureBox();
             PBMinimizar = new PictureBox();
             PBCerrar = new PictureBox();
             PanelLogoForvia = new Panel();
             PBLogoForvia = new PictureBox();
             PanelMenu = new Panel();
-            panel2 = new Panel();
-            btnAbrirInterfazEnviarContenedores = new Button();
-            btnAbrirInterfazReguardarCintas = new Button();
-            panel3 = new Panel();
-            btnAbrirInterfazImprimirEtiquetas = new Button();
-            panel1 = new Panel();
-            pictureBox2 = new PictureBox();
+            panel8 = new Panel();
+            MenuCompararInventario = new FontAwesome.Sharp.IconButton();
+            MenuEditarInventario = new FontAwesome.Sharp.IconButton();
+            MenuImprimirBarcode = new FontAwesome.Sharp.IconButton();
+            MenuEnviarContenedor = new FontAwesome.Sharp.IconButton();
+            MenuResguardarCintas = new FontAwesome.Sharp.IconButton();
+            panel7 = new Panel();
+            panel6 = new Panel();
             label3 = new Label();
-            PanelMenuRegistros = new Panel();
-            btnAbrirInterfazGenerarReporte = new Button();
-            btnAbrirInterfazContenedores = new Button();
-            btnAbrirInterfazCintasBoveda = new Button();
-            btnMenuCintasActivas = new Panel();
-            btnAbrirInterfazCintasActivas = new Button();
-            PanelTituloMenuRegistros = new Panel();
-            pictureBox1 = new PictureBox();
+            pictureBox2 = new PictureBox();
+            panel5 = new Panel();
+            panel4 = new Panel();
+            MenuGenerarReportes = new FontAwesome.Sharp.IconButton();
+            MenuContenedores = new FontAwesome.Sharp.IconButton();
+            MenuCintasBoveda = new FontAwesome.Sharp.IconButton();
+            MenuCintasUso = new FontAwesome.Sharp.IconButton();
+            panel3 = new Panel();
+            panel2 = new Panel();
             label2 = new Label();
+            pictureBox1 = new PictureBox();
+            panel1 = new Panel();
             PanelInterfaces = new Panel();
             PanelSuperior.SuspendLayout();
             PanelNombreApp.SuspendLayout();
             PanelControles.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)btnAjustes).BeginInit();
             ((System.ComponentModel.ISupportInitialize)PBMinimizar).BeginInit();
             ((System.ComponentModel.ISupportInitialize)PBCerrar).BeginInit();
             PanelLogoForvia.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)PBLogoForvia).BeginInit();
             PanelMenu.SuspendLayout();
-            panel2.SuspendLayout();
-            panel3.SuspendLayout();
-            panel1.SuspendLayout();
+            panel8.SuspendLayout();
+            panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            PanelMenuRegistros.SuspendLayout();
-            btnMenuCintasActivas.SuspendLayout();
-            PanelTituloMenuRegistros.SuspendLayout();
+            panel4.SuspendLayout();
+            panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -84,8 +86,8 @@
             PanelSuperior.Dock = DockStyle.Top;
             PanelSuperior.Location = new Point(0, 0);
             PanelSuperior.Name = "PanelSuperior";
-            PanelSuperior.Padding = new Padding(10, 10, 10, 15);
-            PanelSuperior.Size = new Size(1280, 75);
+            PanelSuperior.Padding = new Padding(5);
+            PanelSuperior.Size = new Size(1280, 71);
             PanelSuperior.TabIndex = 0;
             PanelSuperior.MouseDown += ArrastrarVentana;
             // 
@@ -93,10 +95,10 @@
             // 
             PanelNombreApp.Controls.Add(label1);
             PanelNombreApp.Dock = DockStyle.Left;
-            PanelNombreApp.Location = new Point(199, 10);
+            PanelNombreApp.Location = new Point(170, 5);
             PanelNombreApp.Name = "PanelNombreApp";
             PanelNombreApp.Padding = new Padding(1);
-            PanelNombreApp.Size = new Size(727, 50);
+            PanelNombreApp.Size = new Size(786, 61);
             PanelNombreApp.TabIndex = 2;
             PanelNombreApp.MouseDown += ArrastrarVentana;
             // 
@@ -106,7 +108,7 @@
             label1.Dock = DockStyle.Right;
             label1.Font = new Font("Segoe UI Semibold", 28F, FontStyle.Bold);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(286, 1);
+            label1.Location = new Point(345, 1);
             label1.Name = "label1";
             label1.Size = new Size(440, 51);
             label1.TabIndex = 0;
@@ -115,34 +117,39 @@
             // 
             // PanelControles
             // 
-            PanelControles.Controls.Add(pictureBox3);
+            PanelControles.Controls.Add(btnAjustes);
             PanelControles.Controls.Add(PBMinimizar);
             PanelControles.Controls.Add(PBCerrar);
             PanelControles.Dock = DockStyle.Right;
-            PanelControles.Location = new Point(1110, 10);
+            PanelControles.Location = new Point(1115, 5);
             PanelControles.Name = "PanelControles";
-            PanelControles.Size = new Size(160, 50);
+            PanelControles.Padding = new Padding(0, 0, 0, 17);
+            PanelControles.Size = new Size(160, 61);
             PanelControles.TabIndex = 1;
             // 
-            // pictureBox3
+            // btnAjustes
             // 
-            pictureBox3.Dock = DockStyle.Left;
-            pictureBox3.Image = Properties.Resources.ajuste;
-            pictureBox3.Location = new Point(0, 0);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(50, 50);
-            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox3.TabIndex = 2;
-            pictureBox3.TabStop = false;
+            btnAjustes.BackColor = Color.FromArgb(17, 47, 84);
+            btnAjustes.Dock = DockStyle.Left;
+            btnAjustes.ForeColor = Color.Gainsboro;
+            btnAjustes.IconChar = FontAwesome.Sharp.IconChar.Cog;
+            btnAjustes.IconColor = Color.Gainsboro;
+            btnAjustes.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btnAjustes.IconSize = 44;
+            btnAjustes.Location = new Point(0, 0);
+            btnAjustes.Name = "btnAjustes";
+            btnAjustes.Size = new Size(44, 44);
+            btnAjustes.TabIndex = 2;
+            btnAjustes.TabStop = false;
             // 
             // PBMinimizar
             // 
             PBMinimizar.Cursor = Cursors.Hand;
             PBMinimizar.Dock = DockStyle.Right;
             PBMinimizar.Image = Properties.Resources.minimizar;
-            PBMinimizar.Location = new Point(60, 0);
+            PBMinimizar.Location = new Point(72, 0);
             PBMinimizar.Name = "PBMinimizar";
-            PBMinimizar.Size = new Size(50, 50);
+            PBMinimizar.Size = new Size(44, 44);
             PBMinimizar.SizeMode = PictureBoxSizeMode.StretchImage;
             PBMinimizar.TabIndex = 1;
             PBMinimizar.TabStop = false;
@@ -155,9 +162,9 @@
             PBCerrar.Cursor = Cursors.Hand;
             PBCerrar.Dock = DockStyle.Right;
             PBCerrar.Image = Properties.Resources.boton_cerrar;
-            PBCerrar.Location = new Point(110, 0);
+            PBCerrar.Location = new Point(116, 0);
             PBCerrar.Name = "PBCerrar";
-            PBCerrar.Size = new Size(50, 50);
+            PBCerrar.Size = new Size(44, 44);
             PBCerrar.SizeMode = PictureBoxSizeMode.StretchImage;
             PBCerrar.TabIndex = 0;
             PBCerrar.TabStop = false;
@@ -169,20 +176,20 @@
             // 
             PanelLogoForvia.Controls.Add(PBLogoForvia);
             PanelLogoForvia.Dock = DockStyle.Left;
-            PanelLogoForvia.Location = new Point(10, 10);
+            PanelLogoForvia.Location = new Point(5, 5);
             PanelLogoForvia.Name = "PanelLogoForvia";
-            PanelLogoForvia.Padding = new Padding(0, 14, 0, 0);
-            PanelLogoForvia.Size = new Size(189, 50);
+            PanelLogoForvia.Size = new Size(165, 61);
             PanelLogoForvia.TabIndex = 0;
             PanelLogoForvia.MouseDown += ArrastrarVentana;
             // 
             // PBLogoForvia
             // 
             PBLogoForvia.Dock = DockStyle.Fill;
-            PBLogoForvia.Image = Properties.Resources.Logo_forvia;
-            PBLogoForvia.Location = new Point(0, 14);
+            PBLogoForvia.Image = Properties.Resources.forvia_logo;
+            PBLogoForvia.Location = new Point(0, 0);
+            PBLogoForvia.Margin = new Padding(0);
             PBLogoForvia.Name = "PBLogoForvia";
-            PBLogoForvia.Size = new Size(189, 36);
+            PBLogoForvia.Size = new Size(165, 61);
             PBLogoForvia.SizeMode = PictureBoxSizeMode.StretchImage;
             PBLogoForvia.TabIndex = 0;
             PBLogoForvia.TabStop = false;
@@ -191,289 +198,327 @@
             // PanelMenu
             // 
             PanelMenu.BackColor = Color.FromArgb(24, 57, 99);
+            PanelMenu.Controls.Add(panel8);
+            PanelMenu.Controls.Add(panel7);
+            PanelMenu.Controls.Add(panel6);
+            PanelMenu.Controls.Add(panel5);
+            PanelMenu.Controls.Add(panel4);
+            PanelMenu.Controls.Add(panel3);
             PanelMenu.Controls.Add(panel2);
             PanelMenu.Controls.Add(panel1);
-            PanelMenu.Controls.Add(PanelMenuRegistros);
-            PanelMenu.Controls.Add(PanelTituloMenuRegistros);
             PanelMenu.Dock = DockStyle.Left;
-            PanelMenu.Location = new Point(0, 75);
+            PanelMenu.Location = new Point(0, 71);
             PanelMenu.Name = "PanelMenu";
-            PanelMenu.Size = new Size(281, 645);
+            PanelMenu.Size = new Size(234, 649);
             PanelMenu.TabIndex = 1;
             // 
-            // panel2
+            // panel8
             // 
-            panel2.Controls.Add(btnAbrirInterfazEnviarContenedores);
-            panel2.Controls.Add(btnAbrirInterfazReguardarCintas);
-            panel2.Controls.Add(panel3);
-            panel2.Dock = DockStyle.Top;
-            panel2.Location = new Point(0, 398);
-            panel2.Name = "panel2";
-            panel2.Padding = new Padding(30, 0, 8, 8);
-            panel2.Size = new Size(281, 256);
-            panel2.TabIndex = 3;
+            panel8.Controls.Add(MenuCompararInventario);
+            panel8.Controls.Add(MenuEditarInventario);
+            panel8.Controls.Add(MenuImprimirBarcode);
+            panel8.Controls.Add(MenuEnviarContenedor);
+            panel8.Controls.Add(MenuResguardarCintas);
+            panel8.Dock = DockStyle.Fill;
+            panel8.Location = new Point(10, 370);
+            panel8.Name = "panel8";
+            panel8.Size = new Size(224, 279);
+            panel8.TabIndex = 7;
             // 
-            // btnAbrirInterfazEnviarContenedores
+            // MenuCompararInventario
             // 
-            btnAbrirInterfazEnviarContenedores.BackColor = Color.FromArgb(24, 57, 99);
-            btnAbrirInterfazEnviarContenedores.Dock = DockStyle.Top;
-            btnAbrirInterfazEnviarContenedores.FlatAppearance.BorderSize = 0;
-            btnAbrirInterfazEnviarContenedores.FlatAppearance.MouseOverBackColor = Color.FromArgb(24, 72, 136);
-            btnAbrirInterfazEnviarContenedores.FlatStyle = FlatStyle.Flat;
-            btnAbrirInterfazEnviarContenedores.Font = new Font("Segoe UI Semibold", 16F, FontStyle.Bold);
-            btnAbrirInterfazEnviarContenedores.ForeColor = Color.White;
-            btnAbrirInterfazEnviarContenedores.Image = Properties.Resources.enviar;
-            btnAbrirInterfazEnviarContenedores.ImageAlign = ContentAlignment.MiddleLeft;
-            btnAbrirInterfazEnviarContenedores.Location = new Point(30, 152);
-            btnAbrirInterfazEnviarContenedores.Margin = new Padding(4);
-            btnAbrirInterfazEnviarContenedores.Name = "btnAbrirInterfazEnviarContenedores";
-            btnAbrirInterfazEnviarContenedores.Padding = new Padding(2);
-            btnAbrirInterfazEnviarContenedores.Size = new Size(243, 76);
-            btnAbrirInterfazEnviarContenedores.TabIndex = 3;
-            btnAbrirInterfazEnviarContenedores.Text = "Enviar\r\nContenedores";
-            btnAbrirInterfazEnviarContenedores.TextAlign = ContentAlignment.MiddleRight;
-            btnAbrirInterfazEnviarContenedores.UseVisualStyleBackColor = false;
+            MenuCompararInventario.Dock = DockStyle.Top;
+            MenuCompararInventario.FlatAppearance.BorderSize = 0;
+            MenuCompararInventario.FlatStyle = FlatStyle.Flat;
+            MenuCompararInventario.ForeColor = SystemColors.Menu;
+            MenuCompararInventario.IconChar = FontAwesome.Sharp.IconChar.CodeCompare;
+            MenuCompararInventario.IconColor = Color.Pink;
+            MenuCompararInventario.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            MenuCompararInventario.ImageAlign = ContentAlignment.MiddleLeft;
+            MenuCompararInventario.Location = new Point(0, 200);
+            MenuCompararInventario.Name = "MenuCompararInventario";
+            MenuCompararInventario.Padding = new Padding(10, 0, 0, 0);
+            MenuCompararInventario.Size = new Size(224, 60);
+            MenuCompararInventario.TabIndex = 5;
+            MenuCompararInventario.Text = "Comparar\r\nInventario";
+            MenuCompararInventario.TextAlign = ContentAlignment.MiddleRight;
+            MenuCompararInventario.TextImageRelation = TextImageRelation.ImageBeforeText;
+            MenuCompararInventario.UseVisualStyleBackColor = true;
             // 
-            // btnAbrirInterfazReguardarCintas
+            // MenuEditarInventario
             // 
-            btnAbrirInterfazReguardarCintas.BackColor = Color.FromArgb(24, 57, 99);
-            btnAbrirInterfazReguardarCintas.Dock = DockStyle.Top;
-            btnAbrirInterfazReguardarCintas.FlatAppearance.BorderSize = 0;
-            btnAbrirInterfazReguardarCintas.FlatAppearance.MouseOverBackColor = Color.FromArgb(24, 72, 136);
-            btnAbrirInterfazReguardarCintas.FlatStyle = FlatStyle.Flat;
-            btnAbrirInterfazReguardarCintas.Font = new Font("Segoe UI Semibold", 16F, FontStyle.Bold);
-            btnAbrirInterfazReguardarCintas.ForeColor = Color.White;
-            btnAbrirInterfazReguardarCintas.Image = Properties.Resources.guardarBoveda;
-            btnAbrirInterfazReguardarCintas.ImageAlign = ContentAlignment.MiddleLeft;
-            btnAbrirInterfazReguardarCintas.Location = new Point(30, 76);
-            btnAbrirInterfazReguardarCintas.Margin = new Padding(0);
-            btnAbrirInterfazReguardarCintas.Name = "btnAbrirInterfazReguardarCintas";
-            btnAbrirInterfazReguardarCintas.Padding = new Padding(2);
-            btnAbrirInterfazReguardarCintas.Size = new Size(243, 76);
-            btnAbrirInterfazReguardarCintas.TabIndex = 1;
-            btnAbrirInterfazReguardarCintas.Text = "Resguardar\r\nCintas";
-            btnAbrirInterfazReguardarCintas.TextAlign = ContentAlignment.MiddleRight;
-            btnAbrirInterfazReguardarCintas.UseVisualStyleBackColor = false;
+            MenuEditarInventario.Dock = DockStyle.Top;
+            MenuEditarInventario.FlatAppearance.BorderSize = 0;
+            MenuEditarInventario.FlatStyle = FlatStyle.Flat;
+            MenuEditarInventario.ForeColor = SystemColors.Menu;
+            MenuEditarInventario.IconChar = FontAwesome.Sharp.IconChar.Edit;
+            MenuEditarInventario.IconColor = Color.PaleTurquoise;
+            MenuEditarInventario.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            MenuEditarInventario.ImageAlign = ContentAlignment.MiddleLeft;
+            MenuEditarInventario.Location = new Point(0, 150);
+            MenuEditarInventario.Name = "MenuEditarInventario";
+            MenuEditarInventario.Padding = new Padding(10, 0, 0, 0);
+            MenuEditarInventario.Size = new Size(224, 50);
+            MenuEditarInventario.TabIndex = 4;
+            MenuEditarInventario.Text = "Editar Inventario";
+            MenuEditarInventario.TextAlign = ContentAlignment.MiddleRight;
+            MenuEditarInventario.TextImageRelation = TextImageRelation.ImageBeforeText;
+            MenuEditarInventario.UseVisualStyleBackColor = true;
             // 
-            // panel3
+            // MenuImprimirBarcode
             // 
-            panel3.Controls.Add(btnAbrirInterfazImprimirEtiquetas);
-            panel3.Dock = DockStyle.Top;
-            panel3.Location = new Point(30, 0);
-            panel3.Name = "panel3";
-            panel3.Padding = new Padding(0, 5, 0, 0);
-            panel3.Size = new Size(243, 76);
-            panel3.TabIndex = 0;
+            MenuImprimirBarcode.Dock = DockStyle.Top;
+            MenuImprimirBarcode.FlatAppearance.BorderSize = 0;
+            MenuImprimirBarcode.FlatStyle = FlatStyle.Flat;
+            MenuImprimirBarcode.ForeColor = SystemColors.Menu;
+            MenuImprimirBarcode.IconChar = FontAwesome.Sharp.IconChar.Barcode;
+            MenuImprimirBarcode.IconColor = Color.DimGray;
+            MenuImprimirBarcode.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            MenuImprimirBarcode.ImageAlign = ContentAlignment.MiddleLeft;
+            MenuImprimirBarcode.Location = new Point(0, 100);
+            MenuImprimirBarcode.Name = "MenuImprimirBarcode";
+            MenuImprimirBarcode.Padding = new Padding(10, 0, 0, 0);
+            MenuImprimirBarcode.Size = new Size(224, 50);
+            MenuImprimirBarcode.TabIndex = 3;
+            MenuImprimirBarcode.Text = "Imprimir Barcode";
+            MenuImprimirBarcode.TextAlign = ContentAlignment.MiddleRight;
+            MenuImprimirBarcode.TextImageRelation = TextImageRelation.ImageBeforeText;
+            MenuImprimirBarcode.UseVisualStyleBackColor = true;
             // 
-            // btnAbrirInterfazImprimirEtiquetas
+            // MenuEnviarContenedor
             // 
-            btnAbrirInterfazImprimirEtiquetas.BackColor = Color.FromArgb(24, 57, 99);
-            btnAbrirInterfazImprimirEtiquetas.Dock = DockStyle.Top;
-            btnAbrirInterfazImprimirEtiquetas.FlatAppearance.BorderSize = 0;
-            btnAbrirInterfazImprimirEtiquetas.FlatAppearance.MouseOverBackColor = Color.FromArgb(24, 72, 136);
-            btnAbrirInterfazImprimirEtiquetas.FlatStyle = FlatStyle.Flat;
-            btnAbrirInterfazImprimirEtiquetas.Font = new Font("Segoe UI Semibold", 16F, FontStyle.Bold);
-            btnAbrirInterfazImprimirEtiquetas.ForeColor = Color.White;
-            btnAbrirInterfazImprimirEtiquetas.Image = Properties.Resources.Data_Cartridge_Icon1;
-            btnAbrirInterfazImprimirEtiquetas.ImageAlign = ContentAlignment.MiddleLeft;
-            btnAbrirInterfazImprimirEtiquetas.Location = new Point(0, 5);
-            btnAbrirInterfazImprimirEtiquetas.Margin = new Padding(4);
-            btnAbrirInterfazImprimirEtiquetas.Name = "btnAbrirInterfazImprimirEtiquetas";
-            btnAbrirInterfazImprimirEtiquetas.Padding = new Padding(2);
-            btnAbrirInterfazImprimirEtiquetas.Size = new Size(243, 76);
-            btnAbrirInterfazImprimirEtiquetas.TabIndex = 0;
-            btnAbrirInterfazImprimirEtiquetas.Text = "Imprimir\r\nEtiquetas";
-            btnAbrirInterfazImprimirEtiquetas.TextAlign = ContentAlignment.MiddleRight;
-            btnAbrirInterfazImprimirEtiquetas.UseVisualStyleBackColor = false;
+            MenuEnviarContenedor.Dock = DockStyle.Top;
+            MenuEnviarContenedor.FlatAppearance.BorderSize = 0;
+            MenuEnviarContenedor.FlatStyle = FlatStyle.Flat;
+            MenuEnviarContenedor.ForeColor = SystemColors.Menu;
+            MenuEnviarContenedor.IconChar = FontAwesome.Sharp.IconChar.TruckRampBox;
+            MenuEnviarContenedor.IconColor = Color.Orange;
+            MenuEnviarContenedor.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            MenuEnviarContenedor.ImageAlign = ContentAlignment.MiddleLeft;
+            MenuEnviarContenedor.Location = new Point(0, 50);
+            MenuEnviarContenedor.Name = "MenuEnviarContenedor";
+            MenuEnviarContenedor.Padding = new Padding(10, 0, 0, 0);
+            MenuEnviarContenedor.Size = new Size(224, 50);
+            MenuEnviarContenedor.TabIndex = 2;
+            MenuEnviarContenedor.Text = "Enviar Contenedor";
+            MenuEnviarContenedor.TextAlign = ContentAlignment.MiddleRight;
+            MenuEnviarContenedor.TextImageRelation = TextImageRelation.ImageBeforeText;
+            MenuEnviarContenedor.UseVisualStyleBackColor = true;
             // 
-            // panel1
+            // MenuResguardarCintas
             // 
-            panel1.Controls.Add(pictureBox2);
-            panel1.Controls.Add(label3);
-            panel1.Dock = DockStyle.Top;
-            panel1.Location = new Point(0, 332);
-            panel1.Name = "panel1";
-            panel1.Padding = new Padding(10, 0, 30, 10);
-            panel1.Size = new Size(281, 66);
-            panel1.TabIndex = 2;
+            MenuResguardarCintas.Dock = DockStyle.Top;
+            MenuResguardarCintas.FlatAppearance.BorderSize = 0;
+            MenuResguardarCintas.FlatStyle = FlatStyle.Flat;
+            MenuResguardarCintas.ForeColor = SystemColors.Menu;
+            MenuResguardarCintas.IconChar = FontAwesome.Sharp.IconChar.BoxOpen;
+            MenuResguardarCintas.IconColor = Color.Gainsboro;
+            MenuResguardarCintas.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            MenuResguardarCintas.ImageAlign = ContentAlignment.MiddleLeft;
+            MenuResguardarCintas.Location = new Point(0, 0);
+            MenuResguardarCintas.Name = "MenuResguardarCintas";
+            MenuResguardarCintas.Padding = new Padding(10, 0, 0, 0);
+            MenuResguardarCintas.Size = new Size(224, 50);
+            MenuResguardarCintas.TabIndex = 1;
+            MenuResguardarCintas.Text = "Resguardar Cintas";
+            MenuResguardarCintas.TextAlign = ContentAlignment.MiddleRight;
+            MenuResguardarCintas.TextImageRelation = TextImageRelation.ImageBeforeText;
+            MenuResguardarCintas.UseVisualStyleBackColor = true;
             // 
-            // pictureBox2
+            // panel7
             // 
-            pictureBox2.Dock = DockStyle.Fill;
-            pictureBox2.Image = Properties.Resources.accion;
-            pictureBox2.Location = new Point(10, 0);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(61, 56);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 1;
-            pictureBox2.TabStop = false;
+            panel7.Dock = DockStyle.Top;
+            panel7.Location = new Point(10, 360);
+            panel7.Name = "panel7";
+            panel7.Size = new Size(224, 10);
+            panel7.TabIndex = 6;
+            // 
+            // panel6
+            // 
+            panel6.Controls.Add(label3);
+            panel6.Controls.Add(pictureBox2);
+            panel6.Dock = DockStyle.Top;
+            panel6.Location = new Point(10, 290);
+            panel6.Name = "panel6";
+            panel6.Size = new Size(224, 70);
+            panel6.TabIndex = 5;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Dock = DockStyle.Right;
-            label3.Font = new Font("Segoe UI Semibold", 26F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.ForeColor = Color.White;
-            label3.ImageAlign = ContentAlignment.BottomCenter;
-            label3.Location = new Point(71, 0);
+            label3.Font = new Font("Segoe UI Semibold", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.ForeColor = SystemColors.Menu;
+            label3.Location = new Point(71, 33);
             label3.Name = "label3";
-            label3.Padding = new Padding(0, 10, 20, 0);
-            label3.Size = new Size(180, 57);
-            label3.TabIndex = 0;
-            label3.Text = "Acciones";
-            label3.TextAlign = ContentAlignment.BottomCenter;
+            label3.Size = new Size(141, 37);
+            label3.TabIndex = 1;
+            label3.Text = "Funciones";
             // 
-            // PanelMenuRegistros
+            // pictureBox2
             // 
-            PanelMenuRegistros.Controls.Add(btnAbrirInterfazGenerarReporte);
-            PanelMenuRegistros.Controls.Add(btnAbrirInterfazContenedores);
-            PanelMenuRegistros.Controls.Add(btnAbrirInterfazCintasBoveda);
-            PanelMenuRegistros.Controls.Add(btnMenuCintasActivas);
-            PanelMenuRegistros.Dock = DockStyle.Top;
-            PanelMenuRegistros.Location = new Point(0, 66);
-            PanelMenuRegistros.Name = "PanelMenuRegistros";
-            PanelMenuRegistros.Padding = new Padding(30, 0, 8, 8);
-            PanelMenuRegistros.Size = new Size(281, 266);
-            PanelMenuRegistros.TabIndex = 1;
+            pictureBox2.Dock = DockStyle.Left;
+            pictureBox2.Image = Properties.Resources.icono_funciones;
+            pictureBox2.Location = new Point(0, 0);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(70, 70);
+            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox2.TabIndex = 0;
+            pictureBox2.TabStop = false;
             // 
-            // btnAbrirInterfazGenerarReporte
+            // panel5
             // 
-            btnAbrirInterfazGenerarReporte.BackColor = Color.FromArgb(24, 57, 99);
-            btnAbrirInterfazGenerarReporte.Dock = DockStyle.Top;
-            btnAbrirInterfazGenerarReporte.FlatAppearance.BorderSize = 0;
-            btnAbrirInterfazGenerarReporte.FlatAppearance.MouseOverBackColor = Color.FromArgb(24, 72, 136);
-            btnAbrirInterfazGenerarReporte.FlatStyle = FlatStyle.Flat;
-            btnAbrirInterfazGenerarReporte.Font = new Font("Segoe UI Semibold", 16F, FontStyle.Bold);
-            btnAbrirInterfazGenerarReporte.ForeColor = Color.White;
-            btnAbrirInterfazGenerarReporte.Image = Properties.Resources.expediente_Icon;
-            btnAbrirInterfazGenerarReporte.ImageAlign = ContentAlignment.MiddleLeft;
-            btnAbrirInterfazGenerarReporte.Location = new Point(30, 200);
-            btnAbrirInterfazGenerarReporte.Margin = new Padding(4);
-            btnAbrirInterfazGenerarReporte.Name = "btnAbrirInterfazGenerarReporte";
-            btnAbrirInterfazGenerarReporte.Padding = new Padding(2);
-            btnAbrirInterfazGenerarReporte.Size = new Size(243, 59);
-            btnAbrirInterfazGenerarReporte.TabIndex = 2;
-            btnAbrirInterfazGenerarReporte.Text = "Generar Reporte";
-            btnAbrirInterfazGenerarReporte.TextAlign = ContentAlignment.MiddleRight;
-            btnAbrirInterfazGenerarReporte.UseVisualStyleBackColor = false;
+            panel5.Dock = DockStyle.Top;
+            panel5.Location = new Point(10, 280);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(224, 10);
+            panel5.TabIndex = 4;
             // 
-            // btnAbrirInterfazContenedores
+            // panel4
             // 
-            btnAbrirInterfazContenedores.BackColor = Color.FromArgb(24, 57, 99);
-            btnAbrirInterfazContenedores.Dock = DockStyle.Top;
-            btnAbrirInterfazContenedores.FlatAppearance.BorderSize = 0;
-            btnAbrirInterfazContenedores.FlatAppearance.MouseOverBackColor = Color.FromArgb(24, 72, 136);
-            btnAbrirInterfazContenedores.FlatStyle = FlatStyle.Flat;
-            btnAbrirInterfazContenedores.Font = new Font("Segoe UI Semibold", 16F, FontStyle.Bold);
-            btnAbrirInterfazContenedores.ForeColor = Color.White;
-            btnAbrirInterfazContenedores.Image = Properties.Resources.Contenedor;
-            btnAbrirInterfazContenedores.ImageAlign = ContentAlignment.MiddleLeft;
-            btnAbrirInterfazContenedores.Location = new Point(30, 141);
-            btnAbrirInterfazContenedores.Margin = new Padding(4);
-            btnAbrirInterfazContenedores.Name = "btnAbrirInterfazContenedores";
-            btnAbrirInterfazContenedores.Padding = new Padding(2);
-            btnAbrirInterfazContenedores.Size = new Size(243, 59);
-            btnAbrirInterfazContenedores.TabIndex = 3;
-            btnAbrirInterfazContenedores.Text = "Contenedores";
-            btnAbrirInterfazContenedores.TextAlign = ContentAlignment.MiddleRight;
-            btnAbrirInterfazContenedores.UseVisualStyleBackColor = false;
+            panel4.Controls.Add(MenuGenerarReportes);
+            panel4.Controls.Add(MenuContenedores);
+            panel4.Controls.Add(MenuCintasBoveda);
+            panel4.Controls.Add(MenuCintasUso);
+            panel4.Dock = DockStyle.Top;
+            panel4.Location = new Point(10, 80);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(224, 200);
+            panel4.TabIndex = 3;
             // 
-            // btnAbrirInterfazCintasBoveda
+            // MenuGenerarReportes
             // 
-            btnAbrirInterfazCintasBoveda.BackColor = Color.FromArgb(24, 57, 99);
-            btnAbrirInterfazCintasBoveda.Dock = DockStyle.Top;
-            btnAbrirInterfazCintasBoveda.FlatAppearance.BorderSize = 0;
-            btnAbrirInterfazCintasBoveda.FlatAppearance.MouseOverBackColor = Color.FromArgb(24, 72, 136);
-            btnAbrirInterfazCintasBoveda.FlatStyle = FlatStyle.Flat;
-            btnAbrirInterfazCintasBoveda.Font = new Font("Segoe UI Semibold", 16F, FontStyle.Bold);
-            btnAbrirInterfazCintasBoveda.ForeColor = Color.White;
-            btnAbrirInterfazCintasBoveda.Image = Properties.Resources.boveda;
-            btnAbrirInterfazCintasBoveda.ImageAlign = ContentAlignment.MiddleLeft;
-            btnAbrirInterfazCintasBoveda.Location = new Point(30, 64);
-            btnAbrirInterfazCintasBoveda.Margin = new Padding(4);
-            btnAbrirInterfazCintasBoveda.Name = "btnAbrirInterfazCintasBoveda";
-            btnAbrirInterfazCintasBoveda.Padding = new Padding(2);
-            btnAbrirInterfazCintasBoveda.Size = new Size(243, 77);
-            btnAbrirInterfazCintasBoveda.TabIndex = 1;
-            btnAbrirInterfazCintasBoveda.Text = "Cintas en \r\nBóveda";
-            btnAbrirInterfazCintasBoveda.TextAlign = ContentAlignment.MiddleRight;
-            btnAbrirInterfazCintasBoveda.UseVisualStyleBackColor = false;
+            MenuGenerarReportes.Dock = DockStyle.Top;
+            MenuGenerarReportes.FlatAppearance.BorderSize = 0;
+            MenuGenerarReportes.FlatStyle = FlatStyle.Flat;
+            MenuGenerarReportes.ForeColor = SystemColors.Menu;
+            MenuGenerarReportes.IconChar = FontAwesome.Sharp.IconChar.FileExcel;
+            MenuGenerarReportes.IconColor = Color.Green;
+            MenuGenerarReportes.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            MenuGenerarReportes.ImageAlign = ContentAlignment.MiddleLeft;
+            MenuGenerarReportes.Location = new Point(0, 150);
+            MenuGenerarReportes.Name = "MenuGenerarReportes";
+            MenuGenerarReportes.Padding = new Padding(10, 0, 0, 0);
+            MenuGenerarReportes.Size = new Size(224, 50);
+            MenuGenerarReportes.TabIndex = 4;
+            MenuGenerarReportes.Text = "Generar Reporte";
+            MenuGenerarReportes.TextAlign = ContentAlignment.MiddleRight;
+            MenuGenerarReportes.TextImageRelation = TextImageRelation.ImageBeforeText;
+            MenuGenerarReportes.UseVisualStyleBackColor = true;
             // 
-            // btnMenuCintasActivas
+            // MenuContenedores
             // 
-            btnMenuCintasActivas.Controls.Add(btnAbrirInterfazCintasActivas);
-            btnMenuCintasActivas.Dock = DockStyle.Top;
-            btnMenuCintasActivas.Location = new Point(30, 0);
-            btnMenuCintasActivas.Name = "btnMenuCintasActivas";
-            btnMenuCintasActivas.Padding = new Padding(0, 5, 0, 0);
-            btnMenuCintasActivas.Size = new Size(243, 64);
-            btnMenuCintasActivas.TabIndex = 0;
+            MenuContenedores.Dock = DockStyle.Top;
+            MenuContenedores.FlatAppearance.BorderSize = 0;
+            MenuContenedores.FlatStyle = FlatStyle.Flat;
+            MenuContenedores.ForeColor = SystemColors.Menu;
+            MenuContenedores.IconChar = FontAwesome.Sharp.IconChar.Archive;
+            MenuContenedores.IconColor = Color.Gray;
+            MenuContenedores.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            MenuContenedores.ImageAlign = ContentAlignment.MiddleLeft;
+            MenuContenedores.Location = new Point(0, 100);
+            MenuContenedores.Name = "MenuContenedores";
+            MenuContenedores.Padding = new Padding(10, 0, 0, 0);
+            MenuContenedores.Size = new Size(224, 50);
+            MenuContenedores.TabIndex = 3;
+            MenuContenedores.Text = "Contenedores";
+            MenuContenedores.TextAlign = ContentAlignment.MiddleRight;
+            MenuContenedores.TextImageRelation = TextImageRelation.ImageBeforeText;
+            MenuContenedores.UseVisualStyleBackColor = true;
             // 
-            // btnAbrirInterfazCintasActivas
+            // MenuCintasBoveda
             // 
-            btnAbrirInterfazCintasActivas.BackColor = Color.FromArgb(24, 57, 99);
-            btnAbrirInterfazCintasActivas.Dock = DockStyle.Top;
-            btnAbrirInterfazCintasActivas.FlatAppearance.BorderSize = 0;
-            btnAbrirInterfazCintasActivas.FlatAppearance.MouseOverBackColor = Color.FromArgb(24, 72, 136);
-            btnAbrirInterfazCintasActivas.FlatStyle = FlatStyle.Flat;
-            btnAbrirInterfazCintasActivas.Font = new Font("Segoe UI Semibold", 16F, FontStyle.Bold);
-            btnAbrirInterfazCintasActivas.ForeColor = Color.White;
-            btnAbrirInterfazCintasActivas.Image = Properties.Resources.respaldo;
-            btnAbrirInterfazCintasActivas.ImageAlign = ContentAlignment.MiddleLeft;
-            btnAbrirInterfazCintasActivas.Location = new Point(0, 5);
-            btnAbrirInterfazCintasActivas.Margin = new Padding(4);
-            btnAbrirInterfazCintasActivas.Name = "btnAbrirInterfazCintasActivas";
-            btnAbrirInterfazCintasActivas.Padding = new Padding(2);
-            btnAbrirInterfazCintasActivas.Size = new Size(243, 59);
-            btnAbrirInterfazCintasActivas.TabIndex = 0;
-            btnAbrirInterfazCintasActivas.Text = "Cintas Activas";
-            btnAbrirInterfazCintasActivas.TextAlign = ContentAlignment.MiddleRight;
-            btnAbrirInterfazCintasActivas.UseVisualStyleBackColor = false;
+            MenuCintasBoveda.Dock = DockStyle.Top;
+            MenuCintasBoveda.FlatAppearance.BorderSize = 0;
+            MenuCintasBoveda.FlatStyle = FlatStyle.Flat;
+            MenuCintasBoveda.ForeColor = SystemColors.Menu;
+            MenuCintasBoveda.IconChar = FontAwesome.Sharp.IconChar.Vault;
+            MenuCintasBoveda.IconColor = Color.LightSteelBlue;
+            MenuCintasBoveda.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            MenuCintasBoveda.ImageAlign = ContentAlignment.MiddleLeft;
+            MenuCintasBoveda.Location = new Point(0, 50);
+            MenuCintasBoveda.Name = "MenuCintasBoveda";
+            MenuCintasBoveda.Padding = new Padding(10, 0, 0, 0);
+            MenuCintasBoveda.Size = new Size(224, 50);
+            MenuCintasBoveda.TabIndex = 2;
+            MenuCintasBoveda.Text = "Cintas en Boveda\r\n";
+            MenuCintasBoveda.TextAlign = ContentAlignment.MiddleRight;
+            MenuCintasBoveda.TextImageRelation = TextImageRelation.ImageBeforeText;
+            MenuCintasBoveda.UseVisualStyleBackColor = true;
             // 
-            // PanelTituloMenuRegistros
+            // MenuCintasUso
             // 
-            PanelTituloMenuRegistros.Controls.Add(pictureBox1);
-            PanelTituloMenuRegistros.Controls.Add(label2);
-            PanelTituloMenuRegistros.Dock = DockStyle.Top;
-            PanelTituloMenuRegistros.Location = new Point(0, 0);
-            PanelTituloMenuRegistros.Name = "PanelTituloMenuRegistros";
-            PanelTituloMenuRegistros.Padding = new Padding(10, 0, 10, 10);
-            PanelTituloMenuRegistros.Size = new Size(281, 66);
-            PanelTituloMenuRegistros.TabIndex = 0;
-            PanelTituloMenuRegistros.Paint += PanelTituloMenuRegistros_Paint;
+            MenuCintasUso.Dock = DockStyle.Top;
+            MenuCintasUso.FlatAppearance.BorderSize = 0;
+            MenuCintasUso.FlatStyle = FlatStyle.Flat;
+            MenuCintasUso.ForeColor = SystemColors.Menu;
+            MenuCintasUso.IconChar = FontAwesome.Sharp.IconChar.Cogs;
+            MenuCintasUso.IconColor = Color.Gainsboro;
+            MenuCintasUso.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            MenuCintasUso.ImageAlign = ContentAlignment.MiddleLeft;
+            MenuCintasUso.Location = new Point(0, 0);
+            MenuCintasUso.Name = "MenuCintasUso";
+            MenuCintasUso.Padding = new Padding(10, 0, 0, 0);
+            MenuCintasUso.Size = new Size(224, 50);
+            MenuCintasUso.TabIndex = 1;
+            MenuCintasUso.Text = "Cintas en Uso";
+            MenuCintasUso.TextAlign = ContentAlignment.MiddleRight;
+            MenuCintasUso.TextImageRelation = TextImageRelation.ImageBeforeText;
+            MenuCintasUso.UseVisualStyleBackColor = true;
             // 
-            // pictureBox1
+            // panel3
             // 
-            pictureBox1.Dock = DockStyle.Fill;
-            pictureBox1.Image = Properties.Resources.Registros;
-            pictureBox1.Location = new Point(10, 0);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(64, 56);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 1;
-            pictureBox1.TabStop = false;
+            panel3.Dock = DockStyle.Top;
+            panel3.Location = new Point(10, 70);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(224, 10);
+            panel3.TabIndex = 2;
+            // 
+            // panel2
+            // 
+            panel2.Controls.Add(label2);
+            panel2.Controls.Add(pictureBox1);
+            panel2.Dock = DockStyle.Top;
+            panel2.Location = new Point(10, 0);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(224, 70);
+            panel2.TabIndex = 1;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Dock = DockStyle.Right;
-            label2.Font = new Font("Segoe UI Semibold", 26F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.ForeColor = Color.White;
-            label2.ImageAlign = ContentAlignment.BottomCenter;
-            label2.Location = new Point(74, 0);
+            label2.Font = new Font("Segoe UI Semibold", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.ForeColor = SystemColors.Menu;
+            label2.Location = new Point(71, 33);
             label2.Name = "label2";
-            label2.Padding = new Padding(0, 10, 30, 0);
-            label2.Size = new Size(197, 57);
-            label2.TabIndex = 0;
-            label2.Text = "Registros";
-            label2.TextAlign = ContentAlignment.BottomCenter;
+            label2.Size = new Size(142, 37);
+            label2.TabIndex = 1;
+            label2.Text = "Inventario";
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Dock = DockStyle.Left;
+            pictureBox1.Image = Properties.Resources.la_gestion_del_inventario;
+            pictureBox1.Location = new Point(0, 0);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(70, 70);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
+            // 
+            // panel1
+            // 
+            panel1.Dock = DockStyle.Left;
+            panel1.Location = new Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(10, 649);
+            panel1.TabIndex = 0;
             // 
             // PanelInterfaces
             // 
             PanelInterfaces.Dock = DockStyle.Fill;
-            PanelInterfaces.Location = new Point(281, 75);
+            PanelInterfaces.Location = new Point(234, 71);
             PanelInterfaces.Name = "PanelInterfaces";
-            PanelInterfaces.Size = new Size(999, 645);
+            PanelInterfaces.Size = new Size(1046, 649);
             PanelInterfaces.TabIndex = 2;
             // 
             // Form1
@@ -494,21 +539,19 @@
             PanelNombreApp.ResumeLayout(false);
             PanelNombreApp.PerformLayout();
             PanelControles.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)btnAjustes).EndInit();
             ((System.ComponentModel.ISupportInitialize)PBMinimizar).EndInit();
             ((System.ComponentModel.ISupportInitialize)PBCerrar).EndInit();
             PanelLogoForvia.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)PBLogoForvia).EndInit();
             PanelMenu.ResumeLayout(false);
-            panel2.ResumeLayout(false);
-            panel3.ResumeLayout(false);
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
+            panel8.ResumeLayout(false);
+            panel6.ResumeLayout(false);
+            panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            PanelMenuRegistros.ResumeLayout(false);
-            btnMenuCintasActivas.ResumeLayout(false);
-            PanelTituloMenuRegistros.ResumeLayout(false);
-            PanelTituloMenuRegistros.PerformLayout();
+            panel4.ResumeLayout(false);
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
@@ -525,23 +568,27 @@
         private Label label1;
         private Panel PanelMenu;
         private Panel PanelInterfaces;
-        private Panel PanelMenuRegistros;
-        private Panel PanelTituloMenuRegistros;
-        private Panel btnMenuCintasActivas;
-        private Button btnAbrirInterfazCintasActivas;
-        private Button btnAbrirInterfazGenerarReporte;
-        private Button btnAbrirInterfazContenedores;
-        private Button btnAbrirInterfazCintasBoveda;
-        private Label label2;
+        private Panel panel2;
         private PictureBox pictureBox1;
         private Panel panel1;
-        private PictureBox pictureBox2;
-        private Label label3;
-        private Panel panel2;
-        private Button btnAbrirInterfazEnviarContenedores;
-        private Button btnAbrirInterfazReguardarCintas;
+        private Label label2;
         private Panel panel3;
-        private Button btnAbrirInterfazImprimirEtiquetas;
-        private PictureBox pictureBox3;
+        private Panel panel4;
+        private FontAwesome.Sharp.IconButton MenuCintasUso;
+        private FontAwesome.Sharp.IconButton MenuCintasBoveda;
+        private FontAwesome.Sharp.IconButton MenuContenedores;
+        private Panel panel6;
+        private Label label3;
+        private PictureBox pictureBox2;
+        private Panel panel5;
+        private Panel panel8;
+        private FontAwesome.Sharp.IconButton MenuImprimirBarcode;
+        private FontAwesome.Sharp.IconButton MenuEnviarContenedor;
+        private FontAwesome.Sharp.IconButton MenuResguardarCintas;
+        private Panel panel7;
+        private FontAwesome.Sharp.IconPictureBox btnAjustes;
+        private FontAwesome.Sharp.IconButton MenuGenerarReportes;
+        private FontAwesome.Sharp.IconButton MenuCompararInventario;
+        private FontAwesome.Sharp.IconButton MenuEditarInventario;
     }
 }

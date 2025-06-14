@@ -203,9 +203,19 @@ namespace TapeManager.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Logo_forvia {
+        internal static System.Drawing.Bitmap icono_funciones {
             get {
-                object obj = ResourceManager.GetObject("Logo_forvia", resourceCulture);
+                object obj = ResourceManager.GetObject("icono_funciones", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap la_gestion_del_inventario {
+            get {
+                object obj = ResourceManager.GetObject("la-gestion-del-inventario", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
