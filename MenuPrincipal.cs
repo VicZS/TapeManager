@@ -9,7 +9,7 @@ using DocumentFormat.OpenXml.Vml.Office;
 
 namespace TapeManager
 {
-    public partial class Form1 : Form
+    public partial class MenuPrincipal : Form
     {
         [DllImport("user32.dll")]
         public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
@@ -20,9 +20,10 @@ namespace TapeManager
         public const int WM_NCLBUTTONDOWN = 0xA1;
         public const int HTCAPTION = 0x2;
 
-        public Form1()
+        public MenuPrincipal()
         {
             InitializeComponent();
+            AbrirInterfaz(new InterfazInicio());
         }
 
         private void PBCerrar_Click(object sender, EventArgs e)
@@ -82,7 +83,6 @@ namespace TapeManager
         private void Form1_Resize(object sender, EventArgs e)
         {
             Form1_Load(sender, e);
-
         }
 
 
@@ -167,6 +167,7 @@ namespace TapeManager
         private void MenuCintasUso_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
+            AbrirInterfaz(new InterfazCintasEnUso());
         }
 
         private void MenuCintasBoveda_Click(object sender, EventArgs e)
@@ -208,5 +209,28 @@ namespace TapeManager
         {
             ActivateButton(sender);
         }
+
+        private void PBLogoForvia_Click(object sender, EventArgs e) {
+            DisableAllsButtons();
+            AbrirInterfaz(new InterfazInicio());
+
+        }
+
+        private void AbrirInterfaz(object formh)
+        {
+            if (this.PanelInterfaces.Controls.Count > 0)
+            {
+                this.PanelInterfaces.Controls.RemoveAt(0);
+            }
+            
+            Form fh = formh as Form;
+            fh.TopLevel = false;
+            fh.Dock = DockStyle.Fill;
+            fh.FormBorderStyle = FormBorderStyle.None;
+            this.PanelInterfaces.Controls.Add(fh);
+            this.PanelInterfaces.Tag = fh;
+            fh.Show();
+        }
+
     }
 }

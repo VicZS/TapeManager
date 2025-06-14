@@ -1,6 +1,6 @@
 ﻿namespace TapeManager
 {
-    partial class Form1
+    partial class MenuPrincipal
     {
         /// <summary>
         ///  Required designer variable.
@@ -130,6 +130,7 @@
             // btnAjustes
             // 
             btnAjustes.BackColor = Color.FromArgb(17, 47, 84);
+            btnAjustes.Cursor = Cursors.Hand;
             btnAjustes.Dock = DockStyle.Left;
             btnAjustes.ForeColor = Color.Gainsboro;
             btnAjustes.IconChar = FontAwesome.Sharp.IconChar.Cog;
@@ -184,6 +185,7 @@
             // 
             // PBLogoForvia
             // 
+            PBLogoForvia.Cursor = Cursors.Hand;
             PBLogoForvia.Dock = DockStyle.Fill;
             PBLogoForvia.Image = Properties.Resources.forvia_logo;
             PBLogoForvia.Location = new Point(0, 0);
@@ -193,10 +195,11 @@
             PBLogoForvia.SizeMode = PictureBoxSizeMode.StretchImage;
             PBLogoForvia.TabIndex = 0;
             PBLogoForvia.TabStop = false;
-            PBLogoForvia.MouseDown += ArrastrarVentana;
+            PBLogoForvia.Click += PBLogoForvia_Click;
             // 
             // PanelMenu
             // 
+            PanelMenu.AutoScroll = true;
             PanelMenu.BackColor = Color.FromArgb(24, 57, 99);
             PanelMenu.Controls.Add(panel8);
             PanelMenu.Controls.Add(panel7);
@@ -238,7 +241,7 @@
             MenuCompararInventario.Location = new Point(0, 200);
             MenuCompararInventario.Name = "MenuCompararInventario";
             MenuCompararInventario.Padding = new Padding(10, 0, 0, 0);
-            MenuCompararInventario.Size = new Size(224, 60);
+            MenuCompararInventario.Size = new Size(224, 55);
             MenuCompararInventario.TabIndex = 5;
             MenuCompararInventario.Text = "Comparar\r\nInventario";
             MenuCompararInventario.TextAlign = ContentAlignment.MiddleRight;
@@ -526,11 +529,12 @@
             // 
             PanelInterfaces.Dock = DockStyle.Fill;
             PanelInterfaces.Location = new Point(234, 71);
+            PanelInterfaces.Margin = new Padding(0);
             PanelInterfaces.Name = "PanelInterfaces";
             PanelInterfaces.Size = new Size(1046, 649);
             PanelInterfaces.TabIndex = 2;
             // 
-            // Form1
+            // MenuPrincipal
             // 
             AutoScaleDimensions = new SizeF(96F, 96F);
             AutoScaleMode = AutoScaleMode.Dpi;
@@ -540,7 +544,9 @@
             Controls.Add(PanelMenu);
             Controls.Add(PanelSuperior);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "Form1";
+            MinimumSize = new Size(1280, 720);
+            Name = "MenuPrincipal";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
             Load += Form1_Load;
             Resize += Form1_Resize;
