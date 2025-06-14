@@ -177,9 +177,9 @@
             // 
             iconPictureBox2.BackColor = SystemColors.Control;
             iconPictureBox2.Dock = DockStyle.Left;
-            iconPictureBox2.ForeColor = SystemColors.ControlText;
+            iconPictureBox2.ForeColor = Color.Gray;
             iconPictureBox2.IconChar = FontAwesome.Sharp.IconChar.Tape;
-            iconPictureBox2.IconColor = SystemColors.ControlText;
+            iconPictureBox2.IconColor = Color.Gray;
             iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
             iconPictureBox2.IconSize = 70;
             iconPictureBox2.Location = new Point(0, 0);

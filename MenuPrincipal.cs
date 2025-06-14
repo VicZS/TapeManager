@@ -173,6 +173,7 @@ namespace TapeManager
         private void MenuCintasBoveda_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
+            AbrirInterfaz(new InterfazCintasEnBoveda());
         }
 
         private void MenuContenedores_Click(object sender, EventArgs e)
