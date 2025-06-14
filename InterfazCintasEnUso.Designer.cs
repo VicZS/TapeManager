@@ -101,9 +101,9 @@
             // 
             // listBox1
             // 
-            listBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
             listBox1.BackColor = SystemColors.Menu;
             listBox1.BorderStyle = BorderStyle.None;
+            listBox1.Dock = DockStyle.Left;
             listBox1.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             listBox1.FormattingEnabled = true;
             listBox1.HorizontalScrollbar = true;
@@ -112,7 +112,7 @@
             listBox1.Location = new Point(0, 0);
             listBox1.Margin = new Padding(0);
             listBox1.Name = "listBox1";
-            listBox1.Size = new Size(150, 600);
+            listBox1.Size = new Size(150, 599);
             listBox1.Sorted = true;
             listBox1.TabIndex = 0;
             // 
