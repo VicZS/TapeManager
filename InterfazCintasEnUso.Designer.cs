@@ -160,6 +160,7 @@
             panel4.Name = "panel4";
             panel4.Size = new Size(806, 70);
             panel4.TabIndex = 5;
+            panel4.Paint += panel4_Paint;
             // 
             // LNombreCintaSeleccionada
             // 
@@ -200,8 +201,8 @@
             // 
             // InterfazCintasEnUso
             // 
-            AutoScaleDimensions = new SizeF(9F, 23F);
-            AutoScaleMode = AutoScaleMode.Font;
+            AutoScaleDimensions = new SizeF(96F, 96F);
+            AutoScaleMode = AutoScaleMode.Dpi;
             BackColor = SystemColors.Control;
             ClientSize = new Size(1046, 649);
             Controls.Add(label2);
