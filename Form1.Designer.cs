@@ -244,6 +244,7 @@
             MenuCompararInventario.TextAlign = ContentAlignment.MiddleRight;
             MenuCompararInventario.TextImageRelation = TextImageRelation.ImageBeforeText;
             MenuCompararInventario.UseVisualStyleBackColor = true;
+            MenuCompararInventario.Click += MenuCompararInventario_Click;
             // 
             // MenuEditarInventario
             // 
@@ -264,6 +265,7 @@
             MenuEditarInventario.TextAlign = ContentAlignment.MiddleRight;
             MenuEditarInventario.TextImageRelation = TextImageRelation.ImageBeforeText;
             MenuEditarInventario.UseVisualStyleBackColor = true;
+            MenuEditarInventario.Click += MenuEditarInventario_Click;
             // 
             // MenuImprimirBarcode
             // 
@@ -284,6 +286,7 @@
             MenuImprimirBarcode.TextAlign = ContentAlignment.MiddleRight;
             MenuImprimirBarcode.TextImageRelation = TextImageRelation.ImageBeforeText;
             MenuImprimirBarcode.UseVisualStyleBackColor = true;
+            MenuImprimirBarcode.Click += MenuImprimirBarcode_Click;
             // 
             // MenuEnviarContenedor
             // 
@@ -304,6 +307,7 @@
             MenuEnviarContenedor.TextAlign = ContentAlignment.MiddleRight;
             MenuEnviarContenedor.TextImageRelation = TextImageRelation.ImageBeforeText;
             MenuEnviarContenedor.UseVisualStyleBackColor = true;
+            MenuEnviarContenedor.Click += MenuEnviarContenedor_Click;
             // 
             // MenuResguardarCintas
             // 
@@ -324,6 +328,7 @@
             MenuResguardarCintas.TextAlign = ContentAlignment.MiddleRight;
             MenuResguardarCintas.TextImageRelation = TextImageRelation.ImageBeforeText;
             MenuResguardarCintas.UseVisualStyleBackColor = true;
+            MenuResguardarCintas.Click += MenuResguardarCintas_Click;
             // 
             // panel7
             // 
@@ -404,6 +409,7 @@
             MenuGenerarReportes.TextAlign = ContentAlignment.MiddleRight;
             MenuGenerarReportes.TextImageRelation = TextImageRelation.ImageBeforeText;
             MenuGenerarReportes.UseVisualStyleBackColor = true;
+            MenuGenerarReportes.Click += MenuGenerarReportes_Click;
             // 
             // MenuContenedores
             // 
@@ -424,6 +430,7 @@
             MenuContenedores.TextAlign = ContentAlignment.MiddleRight;
             MenuContenedores.TextImageRelation = TextImageRelation.ImageBeforeText;
             MenuContenedores.UseVisualStyleBackColor = true;
+            MenuContenedores.Click += MenuContenedores_Click;
             // 
             // MenuCintasBoveda
             // 
@@ -432,7 +439,7 @@
             MenuCintasBoveda.FlatStyle = FlatStyle.Flat;
             MenuCintasBoveda.ForeColor = SystemColors.Menu;
             MenuCintasBoveda.IconChar = FontAwesome.Sharp.IconChar.Vault;
-            MenuCintasBoveda.IconColor = Color.LightSteelBlue;
+            MenuCintasBoveda.IconColor = Color.LightBlue;
             MenuCintasBoveda.IconFont = FontAwesome.Sharp.IconFont.Auto;
             MenuCintasBoveda.ImageAlign = ContentAlignment.MiddleLeft;
             MenuCintasBoveda.Location = new Point(0, 50);
@@ -444,6 +451,7 @@
             MenuCintasBoveda.TextAlign = ContentAlignment.MiddleRight;
             MenuCintasBoveda.TextImageRelation = TextImageRelation.ImageBeforeText;
             MenuCintasBoveda.UseVisualStyleBackColor = true;
+            MenuCintasBoveda.Click += MenuCintasBoveda_Click;
             // 
             // MenuCintasUso
             // 
@@ -452,7 +460,7 @@
             MenuCintasUso.FlatStyle = FlatStyle.Flat;
             MenuCintasUso.ForeColor = SystemColors.Menu;
             MenuCintasUso.IconChar = FontAwesome.Sharp.IconChar.Cogs;
-            MenuCintasUso.IconColor = Color.Gainsboro;
+            MenuCintasUso.IconColor = Color.GhostWhite;
             MenuCintasUso.IconFont = FontAwesome.Sharp.IconFont.Auto;
             MenuCintasUso.ImageAlign = ContentAlignment.MiddleLeft;
             MenuCintasUso.Location = new Point(0, 0);
@@ -464,6 +472,7 @@
             MenuCintasUso.TextAlign = ContentAlignment.MiddleRight;
             MenuCintasUso.TextImageRelation = TextImageRelation.ImageBeforeText;
             MenuCintasUso.UseVisualStyleBackColor = true;
+            MenuCintasUso.Click += MenuCintasUso_Click;
             // 
             // panel3
             // 

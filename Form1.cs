@@ -1,6 +1,9 @@
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Window;
 using System.Runtime.InteropServices;
 using System.Drawing.Drawing2D;
+using FontAwesome.Sharp;
+using DocumentFormat.OpenXml.Drawing;
+using DocumentFormat.OpenXml.Vml.Office;
 
 
 
@@ -73,7 +76,7 @@ namespace TapeManager
 
             this.Region = new Region(path);
 
-         
+
         }
 
         private void Form1_Resize(object sender, EventArgs e)
@@ -82,9 +85,128 @@ namespace TapeManager
 
         }
 
-  
 
+        private void ActivateButton(object sender)
+        {
+            if (sender is IconButton button)
+            {
+                DisableAllsButtons();
+                button.BackColor = Color.FromArgb(11, 31, 56);
+                button.ForeColor = Color.FromArgb(60, 145, 251);
+                button.IconColor = Color.FromArgb(60, 145, 251);
+                button.TextAlign = ContentAlignment.MiddleCenter;
+                button.ImageAlign = ContentAlignment.MiddleRight;
+                button.TextImageRelation = TextImageRelation.TextBeforeImage;
+            }
 
-        
+        }
+
+        private void DisableAllsButtons()
+        {
+            IconButton[] buttons = { MenuCintasUso, MenuCintasBoveda, MenuContenedores, MenuGenerarReportes, MenuResguardarCintas, MenuEnviarContenedor, MenuImprimirBarcode, MenuEditarInventario, MenuCompararInventario };
+
+            string col = string.Empty;
+
+            foreach (var button in buttons)
+            {
+                if (button == MenuCintasUso)
+                {
+                    col = "GhostWhite";
+                }
+
+                if (button == MenuCintasBoveda)
+                {
+                    col = "LightBlue";
+                }
+
+                if (button == MenuContenedores)
+                {
+                    col = "Gray";
+                }
+
+                if (button == MenuGenerarReportes)
+                {
+                    col = "Green";
+                }
+
+                if (button == MenuResguardarCintas)
+                {
+                    col = "Gainsboro";
+                }
+
+                if (button == MenuEnviarContenedor)
+                {
+                    col = "Orange";
+                }
+
+                if (button == MenuImprimirBarcode)
+                {
+                    col = "DimGray";
+                }
+
+                if (button == MenuEditarInventario)
+                {
+                    col = "PaleTurquoise";
+                }
+
+                if (button == MenuCompararInventario)
+                {
+                    col = "Pink";
+                }
+
+                button.BackColor = Color.FromArgb(24, 57, 99);
+                button.ForeColor = Color.FromArgb(240, 240, 240);
+                button.IconColor = Color.FromName(col);
+                button.TextAlign = ContentAlignment.MiddleLeft;
+                button.ImageAlign = ContentAlignment.MiddleLeft;
+                button.TextImageRelation = TextImageRelation.ImageBeforeText;
+            }
+
+        }
+
+        private void MenuCintasUso_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender);
+        }
+
+        private void MenuCintasBoveda_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender);
+        }
+
+        private void MenuContenedores_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender);
+        }
+
+        private void MenuGenerarReportes_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender);
+        }
+
+        private void MenuResguardarCintas_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender);
+        }
+
+        private void MenuEnviarContenedor_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender);
+        }
+
+        private void MenuImprimirBarcode_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender);
+        }
+
+        private void MenuEditarInventario_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender);
+        }
+
+        private void MenuCompararInventario_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender);
+        }
     }
 }
