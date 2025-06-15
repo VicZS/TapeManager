@@ -191,6 +191,7 @@ namespace TapeManager
         private void MenuResguardarCintas_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
+            AbrirInterfaz(new InterfazResguardarCintas());
         }
 
         private void MenuEnviarContenedor_Click(object sender, EventArgs e)
