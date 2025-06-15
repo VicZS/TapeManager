@@ -30,11 +30,12 @@
         {
             BarraMenuSuperior = new Panel();
             panel2 = new Panel();
-            iconButton1 = new FontAwesome.Sharp.IconButton();
+            btnRegresarInterfazContenedoresEnviados = new FontAwesome.Sharp.IconButton();
             panel1 = new Panel();
             label1 = new Label();
             iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             panel16 = new Panel();
+            checkedListBox1 = new CheckedListBox();
             panel18 = new Panel();
             label8 = new Label();
             panel17 = new Panel();
@@ -59,7 +60,6 @@
             listBox3 = new ListBox();
             panel10 = new Panel();
             label5 = new Label();
-            checkedListBox1 = new CheckedListBox();
             BarraMenuSuperior.SuspendLayout();
             panel2.SuspendLayout();
             panel1.SuspendLayout();
@@ -94,32 +94,33 @@
             // 
             // panel2
             // 
-            panel2.Controls.Add(iconButton1);
+            panel2.Controls.Add(btnRegresarInterfazContenedoresEnviados);
             panel2.Dock = DockStyle.Right;
             panel2.Location = new Point(868, 0);
             panel2.Name = "panel2";
             panel2.Size = new Size(178, 50);
             panel2.TabIndex = 3;
             // 
-            // iconButton1
+            // btnRegresarInterfazContenedoresEnviados
             // 
-            iconButton1.BackColor = Color.Transparent;
-            iconButton1.Dock = DockStyle.Right;
-            iconButton1.FlatAppearance.BorderSize = 0;
-            iconButton1.FlatStyle = FlatStyle.Flat;
-            iconButton1.Font = new Font("Segoe UI Semibold", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            iconButton1.ForeColor = Color.GhostWhite;
-            iconButton1.IconChar = FontAwesome.Sharp.IconChar.ArrowCircleLeft;
-            iconButton1.IconColor = Color.GhostWhite;
-            iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton1.ImageAlign = ContentAlignment.MiddleRight;
-            iconButton1.Location = new Point(7, 0);
-            iconButton1.Name = "iconButton1";
-            iconButton1.Size = new Size(171, 50);
-            iconButton1.TabIndex = 0;
-            iconButton1.Text = "Previous";
-            iconButton1.TextAlign = ContentAlignment.MiddleLeft;
-            iconButton1.UseVisualStyleBackColor = false;
+            btnRegresarInterfazContenedoresEnviados.BackColor = Color.Transparent;
+            btnRegresarInterfazContenedoresEnviados.Dock = DockStyle.Right;
+            btnRegresarInterfazContenedoresEnviados.FlatAppearance.BorderSize = 0;
+            btnRegresarInterfazContenedoresEnviados.FlatStyle = FlatStyle.Flat;
+            btnRegresarInterfazContenedoresEnviados.Font = new Font("Segoe UI Semibold", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnRegresarInterfazContenedoresEnviados.ForeColor = Color.GhostWhite;
+            btnRegresarInterfazContenedoresEnviados.IconChar = FontAwesome.Sharp.IconChar.ArrowCircleLeft;
+            btnRegresarInterfazContenedoresEnviados.IconColor = Color.GhostWhite;
+            btnRegresarInterfazContenedoresEnviados.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btnRegresarInterfazContenedoresEnviados.ImageAlign = ContentAlignment.MiddleRight;
+            btnRegresarInterfazContenedoresEnviados.Location = new Point(7, 0);
+            btnRegresarInterfazContenedoresEnviados.Name = "btnRegresarInterfazContenedoresEnviados";
+            btnRegresarInterfazContenedoresEnviados.Size = new Size(171, 50);
+            btnRegresarInterfazContenedoresEnviados.TabIndex = 0;
+            btnRegresarInterfazContenedoresEnviados.Text = "Previous";
+            btnRegresarInterfazContenedoresEnviados.TextAlign = ContentAlignment.MiddleLeft;
+            btnRegresarInterfazContenedoresEnviados.UseVisualStyleBackColor = false;
+            btnRegresarInterfazContenedoresEnviados.Click += btnRegresarInterfazContenedoresEnviados_Click;
             // 
             // panel1
             // 
@@ -164,10 +165,22 @@
             panel16.Controls.Add(panel18);
             panel16.Controls.Add(panel17);
             panel16.Dock = DockStyle.Fill;
-            panel16.Location = new Point(328, 414);
+            panel16.Location = new Point(398, 414);
             panel16.Name = "panel16";
-            panel16.Size = new Size(718, 235);
+            panel16.Size = new Size(648, 235);
             panel16.TabIndex = 19;
+            // 
+            // checkedListBox1
+            // 
+            checkedListBox1.CheckOnClick = true;
+            checkedListBox1.Dock = DockStyle.Fill;
+            checkedListBox1.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            checkedListBox1.FormattingEnabled = true;
+            checkedListBox1.Items.AddRange(new object[] { "T101010", "T202020", "T303030" });
+            checkedListBox1.Location = new Point(0, 40);
+            checkedListBox1.Name = "checkedListBox1";
+            checkedListBox1.Size = new Size(648, 140);
+            checkedListBox1.TabIndex = 7;
             // 
             // panel18
             // 
@@ -176,7 +189,7 @@
             panel18.Dock = DockStyle.Top;
             panel18.Location = new Point(0, 0);
             panel18.Name = "panel18";
-            panel18.Size = new Size(718, 40);
+            panel18.Size = new Size(648, 40);
             panel18.TabIndex = 6;
             // 
             // label8
@@ -198,7 +211,7 @@
             panel17.Location = new Point(0, 180);
             panel17.Name = "panel17";
             panel17.Padding = new Padding(0, 0, 10, 0);
-            panel17.Size = new Size(718, 55);
+            panel17.Size = new Size(648, 55);
             panel17.TabIndex = 5;
             // 
             // btnGenerarReporteDelDia
@@ -209,9 +222,9 @@
             btnGenerarReporteDelDia.IconColor = Color.Green;
             btnGenerarReporteDelDia.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btnGenerarReporteDelDia.ImageAlign = ContentAlignment.MiddleLeft;
-            btnGenerarReporteDelDia.Location = new Point(485, 0);
+            btnGenerarReporteDelDia.Location = new Point(238, 0);
             btnGenerarReporteDelDia.Name = "btnGenerarReporteDelDia";
-            btnGenerarReporteDelDia.Size = new Size(223, 55);
+            btnGenerarReporteDelDia.Size = new Size(400, 55);
             btnGenerarReporteDelDia.TabIndex = 0;
             btnGenerarReporteDelDia.Text = "Generar Reporte";
             btnGenerarReporteDelDia.TextImageRelation = TextImageRelation.ImageBeforeText;
@@ -222,9 +235,9 @@
             panel19.Controls.Add(label9);
             panel19.Controls.Add(panel20);
             panel19.Dock = DockStyle.Top;
-            panel19.Location = new Point(328, 296);
+            panel19.Location = new Point(398, 296);
             panel19.Name = "panel19";
-            panel19.Size = new Size(718, 118);
+            panel19.Size = new Size(648, 118);
             panel19.TabIndex = 18;
             // 
             // label9
@@ -246,7 +259,7 @@
             panel20.Dock = DockStyle.Top;
             panel20.Location = new Point(0, 0);
             panel20.Name = "panel20";
-            panel20.Size = new Size(718, 40);
+            panel20.Size = new Size(648, 40);
             panel20.TabIndex = 0;
             // 
             // panel21
@@ -290,9 +303,9 @@
             panel13.Controls.Add(label7);
             panel13.Controls.Add(panel14);
             panel13.Dock = DockStyle.Top;
-            panel13.Location = new Point(328, 50);
+            panel13.Location = new Point(398, 50);
             panel13.Name = "panel13";
-            panel13.Size = new Size(718, 246);
+            panel13.Size = new Size(648, 246);
             panel13.TabIndex = 17;
             // 
             // label7
@@ -314,7 +327,7 @@
             panel14.Dock = DockStyle.Top;
             panel14.Location = new Point(0, 0);
             panel14.Name = "panel14";
-            panel14.Size = new Size(718, 40);
+            panel14.Size = new Size(648, 40);
             panel14.TabIndex = 0;
             // 
             // panel15
@@ -358,9 +371,9 @@
             panel11.Controls.Add(listBox4);
             panel11.Controls.Add(panel12);
             panel11.Dock = DockStyle.Left;
-            panel11.Location = new Point(202, 50);
+            panel11.Location = new Point(234, 50);
             panel11.Name = "panel11";
-            panel11.Size = new Size(126, 599);
+            panel11.Size = new Size(164, 599);
             panel11.TabIndex = 16;
             // 
             // listBox4
@@ -376,7 +389,7 @@
             listBox4.Location = new Point(0, 40);
             listBox4.Margin = new Padding(0);
             listBox4.Name = "listBox4";
-            listBox4.Size = new Size(126, 540);
+            listBox4.Size = new Size(164, 540);
             listBox4.Sorted = true;
             listBox4.TabIndex = 3;
             // 
@@ -387,7 +400,7 @@
             panel12.Dock = DockStyle.Top;
             panel12.Location = new Point(0, 0);
             panel12.Name = "panel12";
-            panel12.Size = new Size(126, 40);
+            panel12.Size = new Size(164, 40);
             panel12.TabIndex = 0;
             // 
             // label6
@@ -409,7 +422,7 @@
             panel9.Dock = DockStyle.Left;
             panel9.Location = new Point(0, 50);
             panel9.Name = "panel9";
-            panel9.Size = new Size(202, 599);
+            panel9.Size = new Size(234, 599);
             panel9.TabIndex = 15;
             // 
             // listBox3
@@ -425,7 +438,7 @@
             listBox3.Location = new Point(0, 40);
             listBox3.Margin = new Padding(0);
             listBox3.Name = "listBox3";
-            listBox3.Size = new Size(202, 540);
+            listBox3.Size = new Size(234, 540);
             listBox3.Sorted = true;
             listBox3.TabIndex = 3;
             // 
@@ -436,7 +449,7 @@
             panel10.Dock = DockStyle.Top;
             panel10.Location = new Point(0, 0);
             panel10.Name = "panel10";
-            panel10.Size = new Size(202, 40);
+            panel10.Size = new Size(234, 40);
             panel10.TabIndex = 0;
             // 
             // label5
@@ -450,17 +463,6 @@
             label5.Size = new Size(166, 32);
             label5.TabIndex = 0;
             label5.Text = "Contenedores";
-            // 
-            // checkedListBox1
-            // 
-            checkedListBox1.Dock = DockStyle.Fill;
-            checkedListBox1.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            checkedListBox1.FormattingEnabled = true;
-            checkedListBox1.Items.AddRange(new object[] { "T101010", "T202020", "T303030" });
-            checkedListBox1.Location = new Point(0, 40);
-            checkedListBox1.Name = "checkedListBox1";
-            checkedListBox1.Size = new Size(718, 140);
-            checkedListBox1.TabIndex = 7;
             // 
             // InterfazContenedoresConCintasReutilizables
             // 
@@ -510,7 +512,7 @@
 
         private Panel BarraMenuSuperior;
         private Panel panel2;
-        private FontAwesome.Sharp.IconButton iconButton1;
+        private FontAwesome.Sharp.IconButton btnRegresarInterfazContenedoresEnviados;
         private Panel panel1;
         private Label label1;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;

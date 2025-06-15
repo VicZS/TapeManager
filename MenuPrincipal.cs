@@ -218,7 +218,7 @@ namespace TapeManager
 
         }
 
-        private void AbrirInterfaz(object formh)
+        public void AbrirInterfaz(object formh)
         {
             if (this.PanelInterfaces.Controls.Count > 0)
             {

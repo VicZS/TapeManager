@@ -30,6 +30,7 @@
         {
             BarraMenuSuperior = new Panel();
             panel2 = new Panel();
+            btnIrInterfazContenedoresCintasReutilizar = new FontAwesome.Sharp.IconButton();
             panel1 = new Panel();
             label1 = new Label();
             iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
@@ -71,7 +72,6 @@
             label8 = new Label();
             panel17 = new Panel();
             btnGenerarReporteDelDia = new FontAwesome.Sharp.IconButton();
-            iconButton1 = new FontAwesome.Sharp.IconButton();
             BarraMenuSuperior.SuspendLayout();
             panel2.SuspendLayout();
             panel1.SuspendLayout();
@@ -112,12 +112,33 @@
             // 
             // panel2
             // 
-            panel2.Controls.Add(iconButton1);
+            panel2.Controls.Add(btnIrInterfazContenedoresCintasReutilizar);
             panel2.Dock = DockStyle.Right;
             panel2.Location = new Point(901, 0);
             panel2.Name = "panel2";
             panel2.Size = new Size(145, 50);
             panel2.TabIndex = 3;
+            // 
+            // btnIrInterfazContenedoresCintasReutilizar
+            // 
+            btnIrInterfazContenedoresCintasReutilizar.BackColor = Color.Transparent;
+            btnIrInterfazContenedoresCintasReutilizar.Dock = DockStyle.Right;
+            btnIrInterfazContenedoresCintasReutilizar.FlatAppearance.BorderSize = 0;
+            btnIrInterfazContenedoresCintasReutilizar.FlatStyle = FlatStyle.Flat;
+            btnIrInterfazContenedoresCintasReutilizar.Font = new Font("Segoe UI Semibold", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnIrInterfazContenedoresCintasReutilizar.ForeColor = Color.GhostWhite;
+            btnIrInterfazContenedoresCintasReutilizar.IconChar = FontAwesome.Sharp.IconChar.CircleArrowRight;
+            btnIrInterfazContenedoresCintasReutilizar.IconColor = Color.GhostWhite;
+            btnIrInterfazContenedoresCintasReutilizar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btnIrInterfazContenedoresCintasReutilizar.ImageAlign = ContentAlignment.MiddleRight;
+            btnIrInterfazContenedoresCintasReutilizar.Location = new Point(14, 0);
+            btnIrInterfazContenedoresCintasReutilizar.Name = "btnIrInterfazContenedoresCintasReutilizar";
+            btnIrInterfazContenedoresCintasReutilizar.Size = new Size(131, 50);
+            btnIrInterfazContenedoresCintasReutilizar.TabIndex = 0;
+            btnIrInterfazContenedoresCintasReutilizar.Text = "Next";
+            btnIrInterfazContenedoresCintasReutilizar.TextAlign = ContentAlignment.MiddleLeft;
+            btnIrInterfazContenedoresCintasReutilizar.UseVisualStyleBackColor = false;
+            btnIrInterfazContenedoresCintasReutilizar.Click += btnIrInterfazContenedoresCintasReutilizar_Click;
             // 
             // panel1
             // 
@@ -542,7 +563,6 @@
             panel16.Controls.Add(label11);
             panel16.Controls.Add(panel18);
             panel16.Controls.Add(panel17);
-            panel16.Dock = DockStyle.Fill;
             panel16.Location = new Point(636, 506);
             panel16.Name = "panel16";
             panel16.Size = new Size(410, 143);
@@ -606,26 +626,6 @@
             btnGenerarReporteDelDia.Text = "Generar Reporte";
             btnGenerarReporteDelDia.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnGenerarReporteDelDia.UseVisualStyleBackColor = true;
-            // 
-            // iconButton1
-            // 
-            iconButton1.BackColor = Color.Transparent;
-            iconButton1.Dock = DockStyle.Right;
-            iconButton1.FlatAppearance.BorderSize = 0;
-            iconButton1.FlatStyle = FlatStyle.Flat;
-            iconButton1.Font = new Font("Segoe UI Semibold", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            iconButton1.ForeColor = Color.GhostWhite;
-            iconButton1.IconChar = FontAwesome.Sharp.IconChar.CircleArrowRight;
-            iconButton1.IconColor = Color.GhostWhite;
-            iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton1.ImageAlign = ContentAlignment.MiddleRight;
-            iconButton1.Location = new Point(14, 0);
-            iconButton1.Name = "iconButton1";
-            iconButton1.Size = new Size(131, 50);
-            iconButton1.TabIndex = 0;
-            iconButton1.Text = "Next";
-            iconButton1.TextAlign = ContentAlignment.MiddleLeft;
-            iconButton1.UseVisualStyleBackColor = false;
             // 
             // InterfazContenedoresEnviados
             // 
@@ -728,6 +728,6 @@
         private Panel panel17;
         private FontAwesome.Sharp.IconButton btnGenerarReporteDelDia;
         private Label label11;
-        private FontAwesome.Sharp.IconButton iconButton1;
+        private FontAwesome.Sharp.IconButton btnIrInterfazContenedoresCintasReutilizar;
     }
 }

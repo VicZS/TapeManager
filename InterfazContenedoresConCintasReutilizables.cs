@@ -16,5 +16,14 @@ namespace TapeManager
         {
             InitializeComponent();
         }
+
+        private void btnRegresarInterfazContenedoresEnviados_Click(object sender, EventArgs e)
+        {
+            var principal = this.ParentForm as MenuPrincipal;
+            if (principal != null)
+            {
+                principal.AbrirInterfaz(new InterfazContenedoresEnviados());
+            }
+        }
     }
 }
