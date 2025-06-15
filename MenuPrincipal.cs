@@ -24,7 +24,10 @@ namespace TapeManager
         {
             InitializeComponent();
             AbrirInterfaz(new InterfazInicio());
+            MenuCompararInventario.Visible = false; 
         }
+
+        
 
         private void PBCerrar_Click(object sender, EventArgs e)
         {

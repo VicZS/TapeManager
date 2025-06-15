@@ -17,6 +17,13 @@ namespace TapeManager
             InitializeComponent();
         }
 
-        
+        private void btnIrInterfazEditarInvCintas_Click(object sender, EventArgs e)
+        {
+            var principal = this.ParentForm as MenuPrincipal;
+            if (principal != null)
+            {
+                principal.AbrirInterfaz(new InterfazEditarInventarioCintas());
+            }
+        }
     }
 }

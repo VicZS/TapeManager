@@ -30,7 +30,7 @@
         {
             BarraMenuSuperior = new Panel();
             panel2 = new Panel();
-            btnIrInterfazContenedoresCintasReutilizar = new FontAwesome.Sharp.IconButton();
+            btnIrInterfazEditarInvCintas = new FontAwesome.Sharp.IconButton();
             panel1 = new Panel();
             label1 = new Label();
             iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
@@ -53,6 +53,7 @@
             iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
             panel9 = new Panel();
             panel10 = new Panel();
+            iconButton2 = new FontAwesome.Sharp.IconButton();
             checkBox3 = new CheckBox();
             dateTimePicker3 = new DateTimePicker();
             label10 = new Label();
@@ -73,6 +74,9 @@
             iconPictureBox3 = new FontAwesome.Sharp.IconPictureBox();
             panel14 = new Panel();
             panel15 = new Panel();
+            richTextBox2 = new RichTextBox();
+            panel21 = new Panel();
+            iconButton3 = new FontAwesome.Sharp.IconButton();
             comboBox1 = new ComboBox();
             label8 = new Label();
             panel16 = new Panel();
@@ -80,10 +84,6 @@
             label4 = new Label();
             panel18 = new Panel();
             iconPictureBox4 = new FontAwesome.Sharp.IconPictureBox();
-            iconButton2 = new FontAwesome.Sharp.IconButton();
-            iconButton3 = new FontAwesome.Sharp.IconButton();
-            richTextBox2 = new RichTextBox();
-            panel21 = new Panel();
             BarraMenuSuperior.SuspendLayout();
             panel2.SuspendLayout();
             panel1.SuspendLayout();
@@ -121,32 +121,33 @@
             // 
             // panel2
             // 
-            panel2.Controls.Add(btnIrInterfazContenedoresCintasReutilizar);
+            panel2.Controls.Add(btnIrInterfazEditarInvCintas);
             panel2.Dock = DockStyle.Right;
             panel2.Location = new Point(901, 0);
             panel2.Name = "panel2";
             panel2.Size = new Size(145, 50);
             panel2.TabIndex = 3;
             // 
-            // btnIrInterfazContenedoresCintasReutilizar
+            // btnIrInterfazEditarInvCintas
             // 
-            btnIrInterfazContenedoresCintasReutilizar.BackColor = Color.Transparent;
-            btnIrInterfazContenedoresCintasReutilizar.Dock = DockStyle.Right;
-            btnIrInterfazContenedoresCintasReutilizar.FlatAppearance.BorderSize = 0;
-            btnIrInterfazContenedoresCintasReutilizar.FlatStyle = FlatStyle.Flat;
-            btnIrInterfazContenedoresCintasReutilizar.Font = new Font("Segoe UI Semibold", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnIrInterfazContenedoresCintasReutilizar.ForeColor = Color.GhostWhite;
-            btnIrInterfazContenedoresCintasReutilizar.IconChar = FontAwesome.Sharp.IconChar.CircleArrowRight;
-            btnIrInterfazContenedoresCintasReutilizar.IconColor = Color.GhostWhite;
-            btnIrInterfazContenedoresCintasReutilizar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btnIrInterfazContenedoresCintasReutilizar.ImageAlign = ContentAlignment.MiddleRight;
-            btnIrInterfazContenedoresCintasReutilizar.Location = new Point(14, 0);
-            btnIrInterfazContenedoresCintasReutilizar.Name = "btnIrInterfazContenedoresCintasReutilizar";
-            btnIrInterfazContenedoresCintasReutilizar.Size = new Size(131, 50);
-            btnIrInterfazContenedoresCintasReutilizar.TabIndex = 0;
-            btnIrInterfazContenedoresCintasReutilizar.Text = "Next";
-            btnIrInterfazContenedoresCintasReutilizar.TextAlign = ContentAlignment.MiddleLeft;
-            btnIrInterfazContenedoresCintasReutilizar.UseVisualStyleBackColor = false;
+            btnIrInterfazEditarInvCintas.BackColor = Color.Transparent;
+            btnIrInterfazEditarInvCintas.Dock = DockStyle.Right;
+            btnIrInterfazEditarInvCintas.FlatAppearance.BorderSize = 0;
+            btnIrInterfazEditarInvCintas.FlatStyle = FlatStyle.Flat;
+            btnIrInterfazEditarInvCintas.Font = new Font("Segoe UI Semibold", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnIrInterfazEditarInvCintas.ForeColor = Color.GhostWhite;
+            btnIrInterfazEditarInvCintas.IconChar = FontAwesome.Sharp.IconChar.CircleArrowRight;
+            btnIrInterfazEditarInvCintas.IconColor = Color.GhostWhite;
+            btnIrInterfazEditarInvCintas.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btnIrInterfazEditarInvCintas.ImageAlign = ContentAlignment.MiddleRight;
+            btnIrInterfazEditarInvCintas.Location = new Point(14, 0);
+            btnIrInterfazEditarInvCintas.Name = "btnIrInterfazEditarInvCintas";
+            btnIrInterfazEditarInvCintas.Size = new Size(131, 50);
+            btnIrInterfazEditarInvCintas.TabIndex = 0;
+            btnIrInterfazEditarInvCintas.Text = "Next";
+            btnIrInterfazEditarInvCintas.TextAlign = ContentAlignment.MiddleLeft;
+            btnIrInterfazEditarInvCintas.UseVisualStyleBackColor = false;
+            btnIrInterfazEditarInvCintas.Click += btnIrInterfazEditarInvCintas_Click;
             // 
             // panel1
             // 
@@ -418,6 +419,28 @@
             panel10.Size = new Size(340, 587);
             panel10.TabIndex = 0;
             // 
+            // iconButton2
+            // 
+            iconButton2.BackColor = Color.Teal;
+            iconButton2.Dock = DockStyle.Bottom;
+            iconButton2.FlatAppearance.BorderSize = 3;
+            iconButton2.FlatStyle = FlatStyle.Flat;
+            iconButton2.Font = new Font("Segoe UI Semibold", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            iconButton2.ForeColor = Color.GhostWhite;
+            iconButton2.IconChar = FontAwesome.Sharp.IconChar.Check;
+            iconButton2.IconColor = Color.GhostWhite;
+            iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconButton2.ImageAlign = ContentAlignment.MiddleRight;
+            iconButton2.Location = new Point(0, 533);
+            iconButton2.Margin = new Padding(5);
+            iconButton2.Name = "iconButton2";
+            iconButton2.Padding = new Padding(5);
+            iconButton2.Size = new Size(340, 54);
+            iconButton2.TabIndex = 17;
+            iconButton2.Text = "Modificar Contenedor";
+            iconButton2.TextAlign = ContentAlignment.MiddleLeft;
+            iconButton2.UseVisualStyleBackColor = false;
+            // 
             // checkBox3
             // 
             checkBox3.AutoSize = true;
@@ -445,9 +468,9 @@
             label10.Font = new Font("Segoe UI Semibold", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label10.Location = new Point(0, 442);
             label10.Name = "label10";
-            label10.Size = new Size(177, 25);
+            label10.Size = new Size(238, 25);
             label10.TabIndex = 14;
-            label10.Text = "Fecha de Reingreso";
+            label10.Text = "Nueva Fecha de Reingreso";
             // 
             // checkBox4
             // 
@@ -476,9 +499,9 @@
             label11.Font = new Font("Segoe UI Semibold", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label11.Location = new Point(0, 360);
             label11.Name = "label11";
-            label11.Size = new Size(140, 25);
+            label11.Size = new Size(201, 25);
             label11.TabIndex = 11;
-            label11.Text = "Fecha de Envio";
+            label11.Text = "Nueva Fecha de Envio";
             // 
             // textBox2
             // 
@@ -495,9 +518,9 @@
             label12.Font = new Font("Segoe UI Semibold", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label12.Location = new Point(0, 305);
             label12.Name = "label12";
-            label12.Size = new Size(220, 25);
+            label12.Size = new Size(282, 25);
             label12.TabIndex = 9;
-            label12.Text = "Nombre del Contenedor";
+            label12.Text = "Nuevo Nombre del Contenedor";
             // 
             // panel20
             // 
@@ -631,6 +654,48 @@
             panel15.Size = new Size(336, 587);
             panel15.TabIndex = 0;
             // 
+            // richTextBox2
+            // 
+            richTextBox2.Dock = DockStyle.Top;
+            richTextBox2.Font = new Font("Segoe UI Semibold", 14F, FontStyle.Bold);
+            richTextBox2.Location = new Point(0, 122);
+            richTextBox2.Name = "richTextBox2";
+            richTextBox2.ReadOnly = true;
+            richTextBox2.Size = new Size(336, 171);
+            richTextBox2.TabIndex = 12;
+            richTextBox2.Text = "Nombre:\nT123123123\nFecha de Envio:\n10/10/2020\nFecha de Reingreso:\nSin Fecha de Reingreso";
+            // 
+            // panel21
+            // 
+            panel21.BackColor = Color.Teal;
+            panel21.Dock = DockStyle.Top;
+            panel21.Location = new Point(0, 110);
+            panel21.Name = "panel21";
+            panel21.Size = new Size(336, 12);
+            panel21.TabIndex = 11;
+            // 
+            // iconButton3
+            // 
+            iconButton3.BackColor = Color.Teal;
+            iconButton3.Dock = DockStyle.Bottom;
+            iconButton3.FlatAppearance.BorderSize = 3;
+            iconButton3.FlatStyle = FlatStyle.Flat;
+            iconButton3.Font = new Font("Segoe UI Semibold", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            iconButton3.ForeColor = Color.GhostWhite;
+            iconButton3.IconChar = FontAwesome.Sharp.IconChar.Check;
+            iconButton3.IconColor = Color.GhostWhite;
+            iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconButton3.ImageAlign = ContentAlignment.MiddleRight;
+            iconButton3.Location = new Point(0, 533);
+            iconButton3.Margin = new Padding(5);
+            iconButton3.Name = "iconButton3";
+            iconButton3.Padding = new Padding(5);
+            iconButton3.Size = new Size(336, 54);
+            iconButton3.TabIndex = 10;
+            iconButton3.Text = "Eliminar Contenedor";
+            iconButton3.TextAlign = ContentAlignment.MiddleLeft;
+            iconButton3.UseVisualStyleBackColor = false;
+            // 
             // comboBox1
             // 
             comboBox1.Dock = DockStyle.Top;
@@ -708,70 +773,6 @@
             iconPictureBox4.TabIndex = 0;
             iconPictureBox4.TabStop = false;
             // 
-            // iconButton2
-            // 
-            iconButton2.BackColor = Color.Teal;
-            iconButton2.Dock = DockStyle.Bottom;
-            iconButton2.FlatAppearance.BorderSize = 3;
-            iconButton2.FlatStyle = FlatStyle.Flat;
-            iconButton2.Font = new Font("Segoe UI Semibold", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            iconButton2.ForeColor = Color.GhostWhite;
-            iconButton2.IconChar = FontAwesome.Sharp.IconChar.Check;
-            iconButton2.IconColor = Color.GhostWhite;
-            iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton2.ImageAlign = ContentAlignment.MiddleRight;
-            iconButton2.Location = new Point(0, 533);
-            iconButton2.Margin = new Padding(5);
-            iconButton2.Name = "iconButton2";
-            iconButton2.Padding = new Padding(5);
-            iconButton2.Size = new Size(340, 54);
-            iconButton2.TabIndex = 17;
-            iconButton2.Text = "Modificar Contenedor";
-            iconButton2.TextAlign = ContentAlignment.MiddleLeft;
-            iconButton2.UseVisualStyleBackColor = false;
-            // 
-            // iconButton3
-            // 
-            iconButton3.BackColor = Color.Teal;
-            iconButton3.Dock = DockStyle.Bottom;
-            iconButton3.FlatAppearance.BorderSize = 3;
-            iconButton3.FlatStyle = FlatStyle.Flat;
-            iconButton3.Font = new Font("Segoe UI Semibold", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            iconButton3.ForeColor = Color.GhostWhite;
-            iconButton3.IconChar = FontAwesome.Sharp.IconChar.Check;
-            iconButton3.IconColor = Color.GhostWhite;
-            iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton3.ImageAlign = ContentAlignment.MiddleRight;
-            iconButton3.Location = new Point(0, 533);
-            iconButton3.Margin = new Padding(5);
-            iconButton3.Name = "iconButton3";
-            iconButton3.Padding = new Padding(5);
-            iconButton3.Size = new Size(336, 54);
-            iconButton3.TabIndex = 10;
-            iconButton3.Text = "Eliminar Contenedor";
-            iconButton3.TextAlign = ContentAlignment.MiddleLeft;
-            iconButton3.UseVisualStyleBackColor = false;
-            // 
-            // richTextBox2
-            // 
-            richTextBox2.Dock = DockStyle.Top;
-            richTextBox2.Font = new Font("Segoe UI Semibold", 14F, FontStyle.Bold);
-            richTextBox2.Location = new Point(0, 122);
-            richTextBox2.Name = "richTextBox2";
-            richTextBox2.ReadOnly = true;
-            richTextBox2.Size = new Size(336, 171);
-            richTextBox2.TabIndex = 12;
-            richTextBox2.Text = "Nombre:\nT123123123\nFecha de Envio:\n10/10/2020\nFecha de Reingreso:\nSin Fecha de Reingreso";
-            // 
-            // panel21
-            // 
-            panel21.BackColor = Color.Teal;
-            panel21.Dock = DockStyle.Top;
-            panel21.Location = new Point(0, 110);
-            panel21.Name = "panel21";
-            panel21.Size = new Size(336, 12);
-            panel21.TabIndex = 11;
-            // 
             // InterfazEditarInventario
             // 
             AutoScaleDimensions = new SizeF(96F, 96F);
@@ -821,7 +822,7 @@
 
         private Panel BarraMenuSuperior;
         private Panel panel2;
-        private FontAwesome.Sharp.IconButton btnIrInterfazContenedoresCintasReutilizar;
+        private FontAwesome.Sharp.IconButton btnIrInterfazEditarInvCintas;
         private Panel panel1;
         private Label label1;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;

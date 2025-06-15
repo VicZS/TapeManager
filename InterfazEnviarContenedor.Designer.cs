@@ -53,6 +53,7 @@
             panel3 = new Panel();
             panel4 = new Panel();
             iconButton1 = new FontAwesome.Sharp.IconButton();
+            label4 = new Label();
             BarraMenuSuperior.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox1).BeginInit();
             panel1.SuspendLayout();
@@ -352,11 +353,24 @@
             iconButton1.TextImageRelation = TextImageRelation.ImageBeforeText;
             iconButton1.UseVisualStyleBackColor = true;
             // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Dock = DockStyle.Right;
+            label4.Font = new Font("Segoe UI Semibold", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label4.ForeColor = Color.DarkOrange;
+            label4.Location = new Point(794, 50);
+            label4.Name = "label4";
+            label4.Size = new Size(252, 37);
+            label4.TabIndex = 8;
+            label4.Text = "Hoy es: 15/06/2025";
+            // 
             // InterfazEnviarContenedor
             // 
             AutoScaleDimensions = new SizeF(96F, 96F);
             AutoScaleMode = AutoScaleMode.Dpi;
             ClientSize = new Size(1046, 649);
+            Controls.Add(label4);
             Controls.Add(panel4);
             Controls.Add(panel3);
             Controls.Add(panel2);
@@ -385,6 +399,7 @@
             panel2.ResumeLayout(false);
             panel4.ResumeLayout(false);
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -414,5 +429,6 @@
         private PictureBox pictureBox1;
         private Panel panel13;
         private TextBox textBox1;
+        private Label label4;
     }
 }
