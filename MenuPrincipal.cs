@@ -185,6 +185,7 @@ namespace TapeManager
         private void MenuGenerarReportes_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
+            AbrirInterfaz(new InterfazGenerarReporte());
         }
 
         private void MenuResguardarCintas_Click(object sender, EventArgs e)
