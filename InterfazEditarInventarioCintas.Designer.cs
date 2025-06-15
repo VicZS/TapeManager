@@ -1,6 +1,6 @@
 ﻿namespace TapeManager
 {
-    partial class InterfazEditarInventario
+    partial class InterfazEditarInventarioCintas
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,7 @@
         {
             BarraMenuSuperior = new Panel();
             panel2 = new Panel();
-            btnIrInterfazContenedoresCintasReutilizar = new FontAwesome.Sharp.IconButton();
+            btnRegresarInterfazContenedoresEnviados = new FontAwesome.Sharp.IconButton();
             panel1 = new Panel();
             label1 = new Label();
             iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
@@ -49,36 +49,36 @@
             BarraMenuSuperior.Location = new Point(0, 0);
             BarraMenuSuperior.Name = "BarraMenuSuperior";
             BarraMenuSuperior.Size = new Size(1046, 50);
-            BarraMenuSuperior.TabIndex = 3;
+            BarraMenuSuperior.TabIndex = 4;
             // 
             // panel2
             // 
-            panel2.Controls.Add(btnIrInterfazContenedoresCintasReutilizar);
+            panel2.Controls.Add(btnRegresarInterfazContenedoresEnviados);
             panel2.Dock = DockStyle.Right;
-            panel2.Location = new Point(901, 0);
+            panel2.Location = new Point(868, 0);
             panel2.Name = "panel2";
-            panel2.Size = new Size(145, 50);
+            panel2.Size = new Size(178, 50);
             panel2.TabIndex = 3;
             // 
-            // btnIrInterfazContenedoresCintasReutilizar
+            // btnRegresarInterfazContenedoresEnviados
             // 
-            btnIrInterfazContenedoresCintasReutilizar.BackColor = Color.Transparent;
-            btnIrInterfazContenedoresCintasReutilizar.Dock = DockStyle.Right;
-            btnIrInterfazContenedoresCintasReutilizar.FlatAppearance.BorderSize = 0;
-            btnIrInterfazContenedoresCintasReutilizar.FlatStyle = FlatStyle.Flat;
-            btnIrInterfazContenedoresCintasReutilizar.Font = new Font("Segoe UI Semibold", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnIrInterfazContenedoresCintasReutilizar.ForeColor = Color.GhostWhite;
-            btnIrInterfazContenedoresCintasReutilizar.IconChar = FontAwesome.Sharp.IconChar.CircleArrowRight;
-            btnIrInterfazContenedoresCintasReutilizar.IconColor = Color.GhostWhite;
-            btnIrInterfazContenedoresCintasReutilizar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btnIrInterfazContenedoresCintasReutilizar.ImageAlign = ContentAlignment.MiddleRight;
-            btnIrInterfazContenedoresCintasReutilizar.Location = new Point(14, 0);
-            btnIrInterfazContenedoresCintasReutilizar.Name = "btnIrInterfazContenedoresCintasReutilizar";
-            btnIrInterfazContenedoresCintasReutilizar.Size = new Size(131, 50);
-            btnIrInterfazContenedoresCintasReutilizar.TabIndex = 0;
-            btnIrInterfazContenedoresCintasReutilizar.Text = "Next";
-            btnIrInterfazContenedoresCintasReutilizar.TextAlign = ContentAlignment.MiddleLeft;
-            btnIrInterfazContenedoresCintasReutilizar.UseVisualStyleBackColor = false;
+            btnRegresarInterfazContenedoresEnviados.BackColor = Color.Transparent;
+            btnRegresarInterfazContenedoresEnviados.Dock = DockStyle.Right;
+            btnRegresarInterfazContenedoresEnviados.FlatAppearance.BorderSize = 0;
+            btnRegresarInterfazContenedoresEnviados.FlatStyle = FlatStyle.Flat;
+            btnRegresarInterfazContenedoresEnviados.Font = new Font("Segoe UI Semibold", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnRegresarInterfazContenedoresEnviados.ForeColor = Color.GhostWhite;
+            btnRegresarInterfazContenedoresEnviados.IconChar = FontAwesome.Sharp.IconChar.ArrowCircleLeft;
+            btnRegresarInterfazContenedoresEnviados.IconColor = Color.GhostWhite;
+            btnRegresarInterfazContenedoresEnviados.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btnRegresarInterfazContenedoresEnviados.ImageAlign = ContentAlignment.MiddleRight;
+            btnRegresarInterfazContenedoresEnviados.Location = new Point(7, 0);
+            btnRegresarInterfazContenedoresEnviados.Name = "btnRegresarInterfazContenedoresEnviados";
+            btnRegresarInterfazContenedoresEnviados.Size = new Size(171, 50);
+            btnRegresarInterfazContenedoresEnviados.TabIndex = 0;
+            btnRegresarInterfazContenedoresEnviados.Text = "Previous";
+            btnRegresarInterfazContenedoresEnviados.TextAlign = ContentAlignment.MiddleLeft;
+            btnRegresarInterfazContenedoresEnviados.UseVisualStyleBackColor = false;
             // 
             // panel1
             // 
@@ -98,16 +98,16 @@
             label1.ForeColor = Color.GhostWhite;
             label1.Location = new Point(50, 13);
             label1.Name = "label1";
-            label1.Size = new Size(435, 37);
+            label1.Size = new Size(340, 37);
             label1.TabIndex = 2;
-            label1.Text = "Editar Inventario de Contenedores";
+            label1.Text = "Editar Inventario de Cintas";
             // 
             // iconPictureBox1
             // 
             iconPictureBox1.BackColor = Color.Transparent;
             iconPictureBox1.Dock = DockStyle.Left;
             iconPictureBox1.ForeColor = Color.GhostWhite;
-            iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.Archive;
+            iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.Tape;
             iconPictureBox1.IconColor = Color.GhostWhite;
             iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             iconPictureBox1.IconSize = 50;
@@ -117,15 +117,15 @@
             iconPictureBox1.TabIndex = 1;
             iconPictureBox1.TabStop = false;
             // 
-            // InterfazEditarInventario
+            // InterfazEditarInventarioCintas
             // 
             AutoScaleDimensions = new SizeF(96F, 96F);
             AutoScaleMode = AutoScaleMode.Dpi;
             ClientSize = new Size(1046, 649);
             Controls.Add(BarraMenuSuperior);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "InterfazEditarInventario";
-            Text = "InterfazEditarInventario";
+            Name = "InterfazEditarInventarioCintas";
+            Text = "InterfazEditarInventarioCintas";
             BarraMenuSuperior.ResumeLayout(false);
             panel2.ResumeLayout(false);
             panel1.ResumeLayout(false);
@@ -138,7 +138,7 @@
 
         private Panel BarraMenuSuperior;
         private Panel panel2;
-        private FontAwesome.Sharp.IconButton btnIrInterfazContenedoresCintasReutilizar;
+        private FontAwesome.Sharp.IconButton btnRegresarInterfazContenedoresEnviados;
         private Panel panel1;
         private Label label1;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;

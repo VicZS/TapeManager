@@ -107,7 +107,7 @@
             panel1.Location = new Point(0, 50);
             panel1.Margin = new Padding(0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(160, 599);
+            panel1.Size = new Size(204, 599);
             panel1.TabIndex = 2;
             // 
             // panel6
@@ -116,7 +116,7 @@
             panel6.Location = new Point(0, 332);
             panel6.Name = "panel6";
             panel6.Padding = new Padding(0, 0, 10, 0);
-            panel6.Size = new Size(160, 268);
+            panel6.Size = new Size(204, 268);
             panel6.TabIndex = 4;
             // 
             // LBCintasWeekly
@@ -132,7 +132,7 @@
             LBCintasWeekly.Location = new Point(0, -2);
             LBCintasWeekly.Margin = new Padding(0);
             LBCintasWeekly.Name = "LBCintasWeekly";
-            LBCintasWeekly.Size = new Size(150, 270);
+            LBCintasWeekly.Size = new Size(194, 270);
             LBCintasWeekly.Sorted = true;
             LBCintasWeekly.TabIndex = 1;
             // 
@@ -143,7 +143,7 @@
             panel5.Dock = DockStyle.Top;
             panel5.Location = new Point(0, 300);
             panel5.Name = "panel5";
-            panel5.Size = new Size(160, 32);
+            panel5.Size = new Size(204, 32);
             panel5.TabIndex = 3;
             // 
             // label3
@@ -166,7 +166,7 @@
             panel4.Location = new Point(0, 32);
             panel4.Name = "panel4";
             panel4.Padding = new Padding(0, 0, 10, 0);
-            panel4.Size = new Size(160, 268);
+            panel4.Size = new Size(204, 268);
             panel4.TabIndex = 2;
             // 
             // LBCintasDaily
@@ -182,7 +182,7 @@
             LBCintasDaily.Location = new Point(0, -2);
             LBCintasDaily.Margin = new Padding(0);
             LBCintasDaily.Name = "LBCintasDaily";
-            LBCintasDaily.Size = new Size(150, 270);
+            LBCintasDaily.Size = new Size(194, 270);
             LBCintasDaily.Sorted = true;
             LBCintasDaily.TabIndex = 1;
             // 
@@ -193,7 +193,7 @@
             panel3.Dock = DockStyle.Top;
             panel3.Location = new Point(0, 0);
             panel3.Name = "panel3";
-            panel3.Size = new Size(160, 32);
+            panel3.Size = new Size(204, 32);
             panel3.TabIndex = 1;
             // 
             // label2
@@ -217,7 +217,7 @@
             btnGenerarReporteCintasEnBoveda.IconColor = Color.Green;
             btnGenerarReporteCintasEnBoveda.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btnGenerarReporteCintasEnBoveda.ImageAlign = ContentAlignment.MiddleLeft;
-            btnGenerarReporteCintasEnBoveda.Location = new Point(450, 0);
+            btnGenerarReporteCintasEnBoveda.Location = new Point(406, 0);
             btnGenerarReporteCintasEnBoveda.Name = "btnGenerarReporteCintasEnBoveda";
             btnGenerarReporteCintasEnBoveda.Size = new Size(426, 50);
             btnGenerarReporteCintasEnBoveda.TabIndex = 0;
@@ -229,10 +229,10 @@
             // 
             panel2.Controls.Add(btnGenerarReporteCintasEnBoveda);
             panel2.Dock = DockStyle.Bottom;
-            panel2.Location = new Point(160, 599);
+            panel2.Location = new Point(204, 599);
             panel2.Name = "panel2";
             panel2.Padding = new Padding(0, 0, 10, 0);
-            panel2.Size = new Size(886, 50);
+            panel2.Size = new Size(842, 50);
             panel2.TabIndex = 4;
             // 
             // panel7
@@ -240,9 +240,9 @@
             panel7.Controls.Add(LNombreCintaSeleccionada);
             panel7.Controls.Add(iconPictureBox2);
             panel7.Dock = DockStyle.Top;
-            panel7.Location = new Point(160, 50);
+            panel7.Location = new Point(204, 50);
             panel7.Name = "panel7";
-            panel7.Size = new Size(886, 70);
+            panel7.Size = new Size(842, 70);
             panel7.TabIndex = 5;
             // 
             // LNombreCintaSeleccionada
@@ -276,7 +276,7 @@
             label4.AutoSize = true;
             label4.Dock = DockStyle.Fill;
             label4.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label4.Location = new Point(160, 120);
+            label4.Location = new Point(204, 120);
             label4.Name = "label4";
             label4.Size = new Size(258, 75);
             label4.TabIndex = 6;
