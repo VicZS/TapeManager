@@ -96,7 +96,7 @@
             panel1.Margin = new Padding(0, 0, 10, 0);
             panel1.Name = "panel1";
             panel1.Padding = new Padding(0, 0, 10, 0);
-            panel1.Size = new Size(160, 599);
+            panel1.Size = new Size(204, 599);
             panel1.TabIndex = 1;
             // 
             // listBox1
@@ -112,7 +112,7 @@
             listBox1.Location = new Point(0, 0);
             listBox1.Margin = new Padding(0);
             listBox1.Name = "listBox1";
-            listBox1.Size = new Size(150, 599);
+            listBox1.Size = new Size(190, 599);
             listBox1.Sorted = true;
             listBox1.TabIndex = 0;
             // 
@@ -120,10 +120,10 @@
             // 
             panel2.Controls.Add(btnGenerarReporteCintasEnUso);
             panel2.Dock = DockStyle.Bottom;
-            panel2.Location = new Point(160, 599);
+            panel2.Location = new Point(204, 599);
             panel2.Name = "panel2";
             panel2.Padding = new Padding(0, 0, 10, 0);
-            panel2.Size = new Size(886, 50);
+            panel2.Size = new Size(842, 50);
             panel2.TabIndex = 3;
             // 
             // btnGenerarReporteCintasEnUso
@@ -134,7 +134,7 @@
             btnGenerarReporteCintasEnUso.IconColor = Color.Green;
             btnGenerarReporteCintasEnUso.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btnGenerarReporteCintasEnUso.ImageAlign = ContentAlignment.MiddleLeft;
-            btnGenerarReporteCintasEnUso.Location = new Point(492, 0);
+            btnGenerarReporteCintasEnUso.Location = new Point(448, 0);
             btnGenerarReporteCintasEnUso.Name = "btnGenerarReporteCintasEnUso";
             btnGenerarReporteCintasEnUso.Size = new Size(384, 50);
             btnGenerarReporteCintasEnUso.TabIndex = 0;
@@ -147,9 +147,9 @@
             panel3.Controls.Add(panel4);
             panel3.Controls.Add(iconPictureBox2);
             panel3.Dock = DockStyle.Top;
-            panel3.Location = new Point(160, 50);
+            panel3.Location = new Point(204, 50);
             panel3.Name = "panel3";
-            panel3.Size = new Size(886, 70);
+            panel3.Size = new Size(842, 70);
             panel3.TabIndex = 4;
             // 
             // panel4
@@ -158,7 +158,7 @@
             panel4.Dock = DockStyle.Fill;
             panel4.Location = new Point(80, 0);
             panel4.Name = "panel4";
-            panel4.Size = new Size(806, 70);
+            panel4.Size = new Size(762, 70);
             panel4.TabIndex = 5;
             panel4.Paint += panel4_Paint;
             // 
@@ -193,7 +193,7 @@
             label2.AutoSize = true;
             label2.Dock = DockStyle.Fill;
             label2.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.Location = new Point(160, 120);
+            label2.Location = new Point(204, 120);
             label2.Name = "label2";
             label2.Size = new Size(478, 50);
             label2.TabIndex = 5;

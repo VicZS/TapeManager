@@ -197,27 +197,30 @@ namespace TapeManager
         private void MenuEnviarContenedor_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
+            AbrirInterfaz(new InterfazEnviarContenedor());
         }
 
         private void MenuImprimirBarcode_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
+            AbrirInterfaz(new InterfazImprimirBarcode());
         }
 
         private void MenuEditarInventario_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
+            AbrirInterfaz(new InterfazEditarInventario());
         }
 
         private void MenuCompararInventario_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
+            AbrirInterfaz(new InterfazCompararInventario());
         }
 
         private void PBLogoForvia_Click(object sender, EventArgs e) {
             DisableAllsButtons();
             AbrirInterfaz(new InterfazInicio());
-
         }
 
         public void AbrirInterfaz(object formh)

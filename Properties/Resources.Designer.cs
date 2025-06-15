@@ -163,6 +163,16 @@ namespace TapeManager.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap escaner_de_codigo_de_barras {
+            get {
+                object obj = ResourceManager.GetObject("escaner-de-codigo-de-barras", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap expediente {
             get {
                 object obj = ResourceManager.GetObject("expediente", resourceCulture);

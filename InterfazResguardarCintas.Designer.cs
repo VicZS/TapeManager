@@ -115,7 +115,7 @@
             panel1.Location = new Point(0, 50);
             panel1.Name = "panel1";
             panel1.Padding = new Padding(0, 0, 10, 0);
-            panel1.Size = new Size(194, 599);
+            panel1.Size = new Size(200, 599);
             panel1.TabIndex = 3;
             // 
             // checkedListBox1
@@ -127,7 +127,7 @@
             checkedListBox1.Items.AddRange(new object[] { "PUE001L6", "PUE001L6", "PUE001L6", "PUE001L6" });
             checkedListBox1.Location = new Point(0, 0);
             checkedListBox1.Name = "checkedListBox1";
-            checkedListBox1.Size = new Size(187, 599);
+            checkedListBox1.Size = new Size(190, 599);
             checkedListBox1.Sorted = true;
             checkedListBox1.TabIndex = 0;
             // 
@@ -137,7 +137,7 @@
             panel2.Controls.Add(panel8);
             panel2.Controls.Add(panel6);
             panel2.Dock = DockStyle.Left;
-            panel2.Location = new Point(194, 50);
+            panel2.Location = new Point(200, 50);
             panel2.Name = "panel2";
             panel2.Size = new Size(339, 599);
             panel2.TabIndex = 7;
@@ -293,7 +293,7 @@
             // 
             panel12.BackColor = Color.DimGray;
             panel12.Dock = DockStyle.Left;
-            panel12.Location = new Point(533, 50);
+            panel12.Location = new Point(539, 50);
             panel12.Name = "panel12";
             panel12.Size = new Size(10, 599);
             panel12.TabIndex = 10;
@@ -303,9 +303,9 @@
             panel3.Controls.Add(panel5);
             panel3.Controls.Add(panel4);
             panel3.Dock = DockStyle.Top;
-            panel3.Location = new Point(543, 50);
+            panel3.Location = new Point(549, 50);
             panel3.Name = "panel3";
-            panel3.Size = new Size(503, 88);
+            panel3.Size = new Size(497, 88);
             panel3.TabIndex = 12;
             // 
             // panel5
@@ -356,7 +356,7 @@
             label3.AutoSize = true;
             label3.Dock = DockStyle.Top;
             label3.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.Location = new Point(543, 138);
+            label3.Location = new Point(549, 138);
             label3.Name = "label3";
             label3.Size = new Size(459, 50);
             label3.TabIndex = 13;

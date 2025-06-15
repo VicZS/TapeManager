@@ -118,8 +118,8 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="enviar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Multimedia\img\enviar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Registros" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Multimedia\img\Registros.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Data Cartridge" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Multimedia\img\Data Cartridge.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -133,20 +133,17 @@
   <data name="Data Cartridge_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Multimedia\img\Data Cartridge_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="icono_funciones" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Multimedia\img\icono_funciones.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Data Cartridge_Icon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Multimedia\img\Data Cartridge_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="guardarBoveda" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Multimedia\img\guardarBoveda.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="forvia-logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Multimedia\img\forvia-logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Registros" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Multimedia\img\Registros.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Contenedor" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Multimedia\img\Contenedor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="enviar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Multimedia\img\enviar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="boton-cerrar - rojo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Multimedia\img\boton-cerrar - rojo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -157,17 +154,23 @@
   <data name="respaldo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Multimedia\img\respaldo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="expediente" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Multimedia\img\expediente.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ajuste" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Multimedia\img\ajuste.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="forvia-logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Multimedia\img\forvia-logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="la-gestion-del-inventario" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Multimedia\img\la-gestion-del-inventario.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ajuste" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Multimedia\img\ajuste.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Contenedor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Multimedia\img\Contenedor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="minimizar_Azul" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Multimedia\img\minimizar_Azul.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="expediente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Multimedia\img\expediente.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="expediente_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Multimedia\img\expediente_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -175,7 +178,7 @@
   <data name="boveda" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Multimedia\img\boveda.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icono_funciones" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Multimedia\img\icono_funciones.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="escaner-de-codigo-de-barras" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Multimedia\img\escaner-de-codigo-de-barras.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
