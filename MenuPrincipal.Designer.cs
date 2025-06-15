@@ -235,7 +235,7 @@
             MenuCompararInventario.FlatStyle = FlatStyle.Flat;
             MenuCompararInventario.ForeColor = SystemColors.Menu;
             MenuCompararInventario.IconChar = FontAwesome.Sharp.IconChar.CodeCompare;
-            MenuCompararInventario.IconColor = Color.Pink;
+            MenuCompararInventario.IconColor = Color.Chocolate;
             MenuCompararInventario.IconFont = FontAwesome.Sharp.IconFont.Auto;
             MenuCompararInventario.ImageAlign = ContentAlignment.MiddleLeft;
             MenuCompararInventario.Location = new Point(0, 200);
