@@ -30,7 +30,6 @@
         {
             BarraMenuSuperior = new Panel();
             panel2 = new Panel();
-            btnSiguienteMenuContenedoresCintasReuso = new FontAwesome.Sharp.IconPictureBox();
             panel1 = new Panel();
             label1 = new Label();
             iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
@@ -72,9 +71,9 @@
             label8 = new Label();
             panel17 = new Panel();
             btnGenerarReporteDelDia = new FontAwesome.Sharp.IconButton();
+            iconButton1 = new FontAwesome.Sharp.IconButton();
             BarraMenuSuperior.SuspendLayout();
             panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)btnSiguienteMenuContenedoresCintasReuso).BeginInit();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox1).BeginInit();
             panel3.SuspendLayout();
@@ -113,28 +112,12 @@
             // 
             // panel2
             // 
-            panel2.Controls.Add(btnSiguienteMenuContenedoresCintasReuso);
+            panel2.Controls.Add(iconButton1);
             panel2.Dock = DockStyle.Right;
-            panel2.Location = new Point(988, 0);
+            panel2.Location = new Point(901, 0);
             panel2.Name = "panel2";
-            panel2.Size = new Size(58, 50);
+            panel2.Size = new Size(145, 50);
             panel2.TabIndex = 3;
-            // 
-            // btnSiguienteMenuContenedoresCintasReuso
-            // 
-            btnSiguienteMenuContenedoresCintasReuso.BackColor = Color.Transparent;
-            btnSiguienteMenuContenedoresCintasReuso.Cursor = Cursors.Hand;
-            btnSiguienteMenuContenedoresCintasReuso.Dock = DockStyle.Right;
-            btnSiguienteMenuContenedoresCintasReuso.ForeColor = Color.GhostWhite;
-            btnSiguienteMenuContenedoresCintasReuso.IconChar = FontAwesome.Sharp.IconChar.CircleArrowRight;
-            btnSiguienteMenuContenedoresCintasReuso.IconColor = Color.GhostWhite;
-            btnSiguienteMenuContenedoresCintasReuso.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btnSiguienteMenuContenedoresCintasReuso.IconSize = 50;
-            btnSiguienteMenuContenedoresCintasReuso.Location = new Point(8, 0);
-            btnSiguienteMenuContenedoresCintasReuso.Name = "btnSiguienteMenuContenedoresCintasReuso";
-            btnSiguienteMenuContenedoresCintasReuso.Size = new Size(50, 50);
-            btnSiguienteMenuContenedoresCintasReuso.TabIndex = 2;
-            btnSiguienteMenuContenedoresCintasReuso.TabStop = false;
             // 
             // panel1
             // 
@@ -435,9 +418,9 @@
             label7.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label7.Location = new Point(0, 40);
             label7.Name = "label7";
-            label7.Size = new Size(282, 75);
+            label7.Size = new Size(282, 125);
             label7.TabIndex = 7;
-            label7.Text = "Distribución del Data Media Set:\r\n10% Daily\r\n90% Weekly";
+            label7.Text = "Distribución del Data Media Set:\r\n10% Daily\r\n90% Weekly\r\n\r\nTotal de Cintas: 10";
             // 
             // panel14
             // 
@@ -503,9 +486,9 @@
             label9.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label9.Location = new Point(0, 40);
             label9.Name = "label9";
-            label9.Size = new Size(258, 50);
+            label9.Size = new Size(258, 75);
             label9.TabIndex = 7;
-            label9.Text = "Data Media Set: Daily/Weekly\r\nFecha de Retiro: dd/MM/yyyy";
+            label9.Text = "Data Media Set: Daily/Weekly\r\nFecha de Retiro: dd/MM/yyyy\r\nDias para su Vencimiento: 10";
             // 
             // panel20
             // 
@@ -624,6 +607,26 @@
             btnGenerarReporteDelDia.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnGenerarReporteDelDia.UseVisualStyleBackColor = true;
             // 
+            // iconButton1
+            // 
+            iconButton1.BackColor = Color.Transparent;
+            iconButton1.Dock = DockStyle.Right;
+            iconButton1.FlatAppearance.BorderSize = 0;
+            iconButton1.FlatStyle = FlatStyle.Flat;
+            iconButton1.Font = new Font("Segoe UI Semibold", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            iconButton1.ForeColor = Color.GhostWhite;
+            iconButton1.IconChar = FontAwesome.Sharp.IconChar.CircleArrowRight;
+            iconButton1.IconColor = Color.GhostWhite;
+            iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconButton1.ImageAlign = ContentAlignment.MiddleRight;
+            iconButton1.Location = new Point(14, 0);
+            iconButton1.Name = "iconButton1";
+            iconButton1.Size = new Size(131, 50);
+            iconButton1.TabIndex = 0;
+            iconButton1.Text = "Next";
+            iconButton1.TextAlign = ContentAlignment.MiddleLeft;
+            iconButton1.UseVisualStyleBackColor = false;
+            // 
             // InterfazContenedoresEnviados
             // 
             AutoScaleDimensions = new SizeF(96F, 96F);
@@ -643,7 +646,6 @@
             Text = "InterfazContenedoresEnviados";
             BarraMenuSuperior.ResumeLayout(false);
             panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)btnSiguienteMenuContenedoresCintasReuso).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox1).EndInit();
@@ -685,7 +687,6 @@
         #endregion
         private Panel BarraMenuSuperior;
         private Panel panel2;
-        private FontAwesome.Sharp.IconPictureBox btnSiguienteMenuContenedoresCintasReuso;
         private Panel panel1;
         private Label label1;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
@@ -727,5 +728,6 @@
         private Panel panel17;
         private FontAwesome.Sharp.IconButton btnGenerarReporteDelDia;
         private Label label11;
+        private FontAwesome.Sharp.IconButton iconButton1;
     }
 }
