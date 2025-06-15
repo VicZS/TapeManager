@@ -179,6 +179,7 @@ namespace TapeManager
         private void MenuContenedores_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
+            AbrirInterfaz(new InterfazContenedoresEnviados());
         }
 
         private void MenuGenerarReportes_Click(object sender, EventArgs e)
