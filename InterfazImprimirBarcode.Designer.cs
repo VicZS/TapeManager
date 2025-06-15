@@ -69,6 +69,7 @@
             label10 = new Label();
             panel18 = new Panel();
             iconPictureBox5 = new FontAwesome.Sharp.IconPictureBox();
+            textBox1 = new TextBox();
             BarraMenuSuperior.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox1).BeginInit();
             panel1.SuspendLayout();
@@ -497,6 +498,7 @@
             // 
             // panel16
             // 
+            panel16.Controls.Add(textBox1);
             panel16.Controls.Add(checkedListBox1);
             panel16.Controls.Add(iconButton5);
             panel16.Controls.Add(panel17);
@@ -510,13 +512,13 @@
             // checkedListBox1
             // 
             checkedListBox1.CheckOnClick = true;
-            checkedListBox1.Dock = DockStyle.Top;
+            checkedListBox1.Dock = DockStyle.Left;
             checkedListBox1.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             checkedListBox1.FormattingEnabled = true;
             checkedListBox1.Items.AddRange(new object[] { "SSS###LL", "SSS###LL", "SSS###LL", "SSS###LL", "SSS###LL", "SSS###LL" });
             checkedListBox1.Location = new Point(0, 64);
             checkedListBox1.Name = "checkedListBox1";
-            checkedListBox1.Size = new Size(662, 284);
+            checkedListBox1.Size = new Size(265, 364);
             checkedListBox1.TabIndex = 9;
             // 
             // iconButton5
@@ -582,6 +584,16 @@
             iconPictureBox5.TabIndex = 0;
             iconPictureBox5.TabStop = false;
             // 
+            // textBox1
+            // 
+            textBox1.CharacterCasing = CharacterCasing.Upper;
+            textBox1.Dock = DockStyle.Top;
+            textBox1.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold);
+            textBox1.Location = new Point(265, 64);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(397, 33);
+            textBox1.TabIndex = 10;
+            // 
             // InterfazImprimirBarcode
             // 
             AutoScaleDimensions = new SizeF(96F, 96F);
@@ -624,6 +636,7 @@
             panel15.ResumeLayout(false);
             panel15.PerformLayout();
             panel16.ResumeLayout(false);
+            panel16.PerformLayout();
             panel17.ResumeLayout(false);
             panel17.PerformLayout();
             panel18.ResumeLayout(false);
@@ -674,5 +687,6 @@
         private Label label3;
         private Label label11;
         private CheckedListBox checkedListBox1;
+        private TextBox textBox1;
     }
 }

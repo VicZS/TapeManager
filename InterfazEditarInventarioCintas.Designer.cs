@@ -34,6 +34,7 @@
             panel1 = new Panel();
             label1 = new Label();
             iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
+            panel8 = new Panel();
             BarraMenuSuperior.SuspendLayout();
             panel2.SuspendLayout();
             panel1.SuspendLayout();
@@ -117,11 +118,20 @@
             iconPictureBox1.TabIndex = 1;
             iconPictureBox1.TabStop = false;
             // 
+            // panel8
+            // 
+            panel8.Dock = DockStyle.Top;
+            panel8.Location = new Point(0, 50);
+            panel8.Name = "panel8";
+            panel8.Size = new Size(1046, 12);
+            panel8.TabIndex = 6;
+            // 
             // InterfazEditarInventarioCintas
             // 
             AutoScaleDimensions = new SizeF(96F, 96F);
             AutoScaleMode = AutoScaleMode.Dpi;
             ClientSize = new Size(1046, 649);
+            Controls.Add(panel8);
             Controls.Add(BarraMenuSuperior);
             FormBorderStyle = FormBorderStyle.None;
             Name = "InterfazEditarInventarioCintas";
@@ -142,5 +152,6 @@
         private Panel panel1;
         private Label label1;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
+        private Panel panel8;
     }
 }
