@@ -95,15 +95,15 @@
             iconPictureBox5 = new FontAwesome.Sharp.IconPictureBox();
             panel19 = new Panel();
             iconButton2 = new FontAwesome.Sharp.IconButton();
-            comboBox6 = new ComboBox();
-            label10 = new Label();
-            comboBox2 = new ComboBox();
             label8 = new Label();
             panel11 = new Panel();
             panel12 = new Panel();
             label13 = new Label();
             panel13 = new Panel();
             iconPictureBox3 = new FontAwesome.Sharp.IconPictureBox();
+            checkedListBox2 = new CheckedListBox();
+            comboBox6 = new ComboBox();
+            label10 = new Label();
             BarraMenuSuperior.SuspendLayout();
             panel2.SuspendLayout();
             panel1.SuspendLayout();
@@ -908,10 +908,10 @@
             // 
             // panel19
             // 
-            panel19.Controls.Add(iconButton2);
             panel19.Controls.Add(comboBox6);
             panel19.Controls.Add(label10);
-            panel19.Controls.Add(comboBox2);
+            panel19.Controls.Add(checkedListBox2);
+            panel19.Controls.Add(iconButton2);
             panel19.Controls.Add(label8);
             panel19.Dock = DockStyle.Top;
             panel19.Location = new Point(0, 54);
@@ -941,35 +941,6 @@
             iconButton2.TextAlign = ContentAlignment.MiddleLeft;
             iconButton2.UseVisualStyleBackColor = false;
             // 
-            // comboBox6
-            // 
-            comboBox6.Dock = DockStyle.Top;
-            comboBox6.FormattingEnabled = true;
-            comboBox6.Location = new Point(0, 81);
-            comboBox6.Name = "comboBox6";
-            comboBox6.Size = new Size(320, 31);
-            comboBox6.TabIndex = 9;
-            // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.Dock = DockStyle.Top;
-            label10.Font = new Font("Segoe UI Semibold", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label10.Location = new Point(0, 56);
-            label10.Name = "label10";
-            label10.Size = new Size(197, 25);
-            label10.TabIndex = 8;
-            label10.Text = "Mover Al Contenedor";
-            // 
-            // comboBox2
-            // 
-            comboBox2.Dock = DockStyle.Top;
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(0, 25);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(320, 31);
-            comboBox2.TabIndex = 7;
-            // 
             // label8
             // 
             label8.AutoSize = true;
@@ -977,9 +948,9 @@
             label8.Font = new Font("Segoe UI Semibold", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label8.Location = new Point(0, 0);
             label8.Name = "label8";
-            label8.Size = new Size(133, 25);
+            label8.Size = new Size(153, 25);
             label8.TabIndex = 6;
-            label8.Text = "Cinta a Mover";
+            label8.Text = "Cinta(s) a Mover";
             // 
             // panel11
             // 
@@ -1009,9 +980,9 @@
             label13.Font = new Font("Segoe UI Semibold", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label13.Location = new Point(0, 4);
             label13.Name = "label13";
-            label13.Size = new Size(149, 50);
+            label13.Size = new Size(169, 50);
             label13.TabIndex = 0;
-            label13.Text = "Mover Cinta de \r\nContenedor";
+            label13.Text = "Mover Cinta(s) de \r\nContenedor";
             // 
             // panel13
             // 
@@ -1037,6 +1008,36 @@
             iconPictureBox3.Size = new Size(54, 54);
             iconPictureBox3.TabIndex = 0;
             iconPictureBox3.TabStop = false;
+            // 
+            // checkedListBox2
+            // 
+            checkedListBox2.CheckOnClick = true;
+            checkedListBox2.Dock = DockStyle.Top;
+            checkedListBox2.FormattingEnabled = true;
+            checkedListBox2.Location = new Point(0, 25);
+            checkedListBox2.Name = "checkedListBox2";
+            checkedListBox2.Size = new Size(320, 104);
+            checkedListBox2.TabIndex = 22;
+            // 
+            // comboBox6
+            // 
+            comboBox6.Dock = DockStyle.Top;
+            comboBox6.FormattingEnabled = true;
+            comboBox6.Location = new Point(0, 154);
+            comboBox6.Name = "comboBox6";
+            comboBox6.Size = new Size(320, 31);
+            comboBox6.TabIndex = 24;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Dock = DockStyle.Top;
+            label10.Font = new Font("Segoe UI Semibold", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label10.Location = new Point(0, 129);
+            label10.Name = "label10";
+            label10.Size = new Size(197, 25);
+            label10.TabIndex = 23;
+            label10.Text = "Mover Al Contenedor";
             // 
             // InterfazEditarInventarioCintas
             // 
@@ -1164,11 +1165,11 @@
         private FontAwesome.Sharp.IconPictureBox iconPictureBox3;
         private Label label9;
         private FontAwesome.Sharp.IconButton iconButton2;
-        private ComboBox comboBox6;
-        private Label label10;
-        private ComboBox comboBox2;
         private Label label8;
         private FontAwesome.Sharp.IconButton iconButton4;
         private CheckedListBox checkedListBox1;
+        private ComboBox comboBox6;
+        private Label label10;
+        private CheckedListBox checkedListBox2;
     }
 }
