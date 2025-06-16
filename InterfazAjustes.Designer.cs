@@ -64,13 +64,6 @@
             iconButton3 = new FontAwesome.Sharp.IconButton();
             panel18 = new Panel();
             panel5 = new Panel();
-            panel21 = new Panel();
-            label13 = new Label();
-            panel22 = new Panel();
-            panel23 = new Panel();
-            label14 = new Label();
-            iconButton6 = new FontAwesome.Sharp.IconButton();
-            iconButton7 = new FontAwesome.Sharp.IconButton();
             iconButton4 = new FontAwesome.Sharp.IconButton();
             panel19 = new Panel();
             iconButton5 = new FontAwesome.Sharp.IconButton();
@@ -111,9 +104,6 @@
             panel17.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)numericUpDown3).BeginInit();
             panel18.SuspendLayout();
-            panel5.SuspendLayout();
-            panel21.SuspendLayout();
-            panel23.SuspendLayout();
             panel20.SuspendLayout();
             panel24.SuspendLayout();
             panel25.SuspendLayout();
@@ -524,99 +514,11 @@
             // panel5
             // 
             panel5.BackColor = SystemColors.Control;
-            panel5.Controls.Add(panel21);
-            panel5.Controls.Add(panel22);
-            panel5.Controls.Add(panel23);
             panel5.Dock = DockStyle.Fill;
             panel5.Location = new Point(700, 50);
             panel5.Name = "panel5";
             panel5.Size = new Size(346, 599);
             panel5.TabIndex = 4;
-            // 
-            // panel21
-            // 
-            panel21.Controls.Add(iconButton6);
-            panel21.Controls.Add(label13);
-            panel21.Dock = DockStyle.Fill;
-            panel21.Location = new Point(0, 265);
-            panel21.Name = "panel21";
-            panel21.Padding = new Padding(5);
-            panel21.Size = new Size(346, 334);
-            panel21.TabIndex = 3;
-            // 
-            // label13
-            // 
-            label13.AutoSize = true;
-            label13.Dock = DockStyle.Top;
-            label13.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label13.Location = new Point(5, 5);
-            label13.Name = "label13";
-            label13.Size = new Size(185, 30);
-            label13.TabIndex = 0;
-            label13.Text = "Descargar Backup";
-            // 
-            // panel22
-            // 
-            panel22.BackColor = Color.DimGray;
-            panel22.Dock = DockStyle.Top;
-            panel22.Location = new Point(0, 257);
-            panel22.Name = "panel22";
-            panel22.Size = new Size(346, 8);
-            panel22.TabIndex = 2;
-            // 
-            // panel23
-            // 
-            panel23.Controls.Add(iconButton7);
-            panel23.Controls.Add(label14);
-            panel23.Dock = DockStyle.Top;
-            panel23.Location = new Point(0, 0);
-            panel23.Name = "panel23";
-            panel23.Padding = new Padding(5);
-            panel23.Size = new Size(346, 257);
-            panel23.TabIndex = 1;
-            // 
-            // label14
-            // 
-            label14.AutoSize = true;
-            label14.Dock = DockStyle.Top;
-            label14.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label14.Location = new Point(5, 5);
-            label14.Name = "label14";
-            label14.Size = new Size(185, 30);
-            label14.TabIndex = 0;
-            label14.Text = "Descargar Backup";
-            // 
-            // iconButton6
-            // 
-            iconButton6.BackColor = Color.DimGray;
-            iconButton6.Dock = DockStyle.Bottom;
-            iconButton6.ForeColor = Color.GhostWhite;
-            iconButton6.IconChar = FontAwesome.Sharp.IconChar.Save;
-            iconButton6.IconColor = Color.GhostWhite;
-            iconButton6.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton6.Location = new Point(5, 274);
-            iconButton6.Name = "iconButton6";
-            iconButton6.Size = new Size(336, 55);
-            iconButton6.TabIndex = 7;
-            iconButton6.Text = "Guardar Cambios";
-            iconButton6.TextImageRelation = TextImageRelation.ImageBeforeText;
-            iconButton6.UseVisualStyleBackColor = false;
-            // 
-            // iconButton7
-            // 
-            iconButton7.BackColor = Color.DimGray;
-            iconButton7.Dock = DockStyle.Bottom;
-            iconButton7.ForeColor = Color.GhostWhite;
-            iconButton7.IconChar = FontAwesome.Sharp.IconChar.Save;
-            iconButton7.IconColor = Color.GhostWhite;
-            iconButton7.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton7.Location = new Point(5, 197);
-            iconButton7.Name = "iconButton7";
-            iconButton7.Size = new Size(336, 55);
-            iconButton7.TabIndex = 7;
-            iconButton7.Text = "Guardar Cambios";
-            iconButton7.TextImageRelation = TextImageRelation.ImageBeforeText;
-            iconButton7.UseVisualStyleBackColor = false;
             // 
             // iconButton4
             // 
@@ -885,11 +787,6 @@
             ((System.ComponentModel.ISupportInitialize)numericUpDown3).EndInit();
             panel18.ResumeLayout(false);
             panel18.PerformLayout();
-            panel5.ResumeLayout(false);
-            panel21.ResumeLayout(false);
-            panel21.PerformLayout();
-            panel23.ResumeLayout(false);
-            panel23.PerformLayout();
             panel20.ResumeLayout(false);
             panel20.PerformLayout();
             panel24.ResumeLayout(false);
@@ -942,17 +839,10 @@
         private Label label6;
         private Panel panel18;
         private Panel panel5;
-        private Panel panel21;
-        private Label label13;
-        private Panel panel22;
-        private Panel panel23;
-        private Label label14;
         private Panel panel20;
         private FontAwesome.Sharp.IconButton iconButton5;
         private Panel panel19;
         private FontAwesome.Sharp.IconButton iconButton4;
-        private FontAwesome.Sharp.IconButton iconButton6;
-        private FontAwesome.Sharp.IconButton iconButton7;
         private Panel panel24;
         private Label label11;
         private Panel panel25;
