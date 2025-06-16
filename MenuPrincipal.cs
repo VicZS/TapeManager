@@ -24,10 +24,10 @@ namespace TapeManager
         {
             InitializeComponent();
             AbrirInterfaz(new InterfazInicio());
-            MenuCompararInventario.Visible = false; 
+            MenuCompararInventario.Visible = false;
         }
 
-        
+
 
         private void PBCerrar_Click(object sender, EventArgs e)
         {
@@ -221,9 +221,16 @@ namespace TapeManager
             AbrirInterfaz(new InterfazCompararInventario());
         }
 
-        private void PBLogoForvia_Click(object sender, EventArgs e) {
+        private void PBLogoForvia_Click(object sender, EventArgs e)
+        {
             DisableAllsButtons();
             AbrirInterfaz(new InterfazInicio());
+        }
+
+        private void btnAjustes_Click(object sender, EventArgs e)
+        {
+            DisableAllsButtons();
+            AbrirInterfaz(new InterfazAjustes());
         }
 
         public void AbrirInterfaz(object formh)
@@ -232,7 +239,7 @@ namespace TapeManager
             {
                 this.PanelInterfaces.Controls.RemoveAt(0);
             }
-            
+
             Form fh = formh as Form;
             fh.TopLevel = false;
             fh.Dock = DockStyle.Fill;
@@ -242,5 +249,6 @@ namespace TapeManager
             fh.Show();
         }
 
+        
     }
 }

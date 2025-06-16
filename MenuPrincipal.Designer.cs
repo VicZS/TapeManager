@@ -142,6 +142,7 @@
             btnAjustes.Size = new Size(44, 44);
             btnAjustes.TabIndex = 2;
             btnAjustes.TabStop = false;
+            btnAjustes.Click += btnAjustes_Click;
             // 
             // PBMinimizar
             // 
