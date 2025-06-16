@@ -46,6 +46,11 @@
             LNombreCintaSeleccionada = new Label();
             iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
             label4 = new Label();
+            panel8 = new Panel();
+            panel9 = new Panel();
+            label5 = new Label();
+            textBox1 = new TextBox();
+            iconButton1 = new FontAwesome.Sharp.IconButton();
             BarraMenuSuperior.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox1).BeginInit();
             panel1.SuspendLayout();
@@ -56,6 +61,8 @@
             panel2.SuspendLayout();
             panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox2).BeginInit();
+            panel8.SuspendLayout();
+            panel9.SuspendLayout();
             SuspendLayout();
             // 
             // BarraMenuSuperior
@@ -224,6 +231,7 @@
             btnGenerarReporteCintasEnBoveda.Text = "Generar Reporte de las Cintas en Boveda";
             btnGenerarReporteCintasEnBoveda.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnGenerarReporteCintasEnBoveda.UseVisualStyleBackColor = true;
+            btnGenerarReporteCintasEnBoveda.Click += btnGenerarReporteCintasEnBoveda_Click;
             // 
             // panel2
             // 
@@ -282,11 +290,70 @@
             label4.TabIndex = 6;
             label4.Text = "Cinta: Nueva / Reuso\r\nData Media Set: Daily/Weekly\r\nFecha de Retiro: dd/MM/yyyy";
             // 
+            // panel8
+            // 
+            panel8.Controls.Add(iconButton1);
+            panel8.Controls.Add(textBox1);
+            panel8.Controls.Add(panel9);
+            panel8.Dock = DockStyle.Bottom;
+            panel8.Location = new Point(204, 510);
+            panel8.Name = "panel8";
+            panel8.Padding = new Padding(10, 0, 0, 0);
+            panel8.Size = new Size(842, 89);
+            panel8.TabIndex = 7;
+            // 
+            // panel9
+            // 
+            panel9.Controls.Add(label5);
+            panel9.Dock = DockStyle.Top;
+            panel9.Location = new Point(10, 0);
+            panel9.Name = "panel9";
+            panel9.Size = new Size(832, 46);
+            panel9.TabIndex = 0;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Dock = DockStyle.Bottom;
+            label5.Font = new Font("Segoe UI Semibold", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label5.Location = new Point(0, 14);
+            label5.Name = "label5";
+            label5.Size = new Size(150, 32);
+            label5.TabIndex = 7;
+            label5.Text = "Buscar Cinta";
+            // 
+            // textBox1
+            // 
+            textBox1.CharacterCasing = CharacterCasing.Upper;
+            textBox1.Dock = DockStyle.Left;
+            textBox1.Font = new Font("Segoe UI Semibold", 18F, FontStyle.Bold);
+            textBox1.Location = new Point(10, 46);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(204, 39);
+            textBox1.TabIndex = 1;
+            // 
+            // iconButton1
+            // 
+            iconButton1.Dock = DockStyle.Left;
+            iconButton1.IconChar = FontAwesome.Sharp.IconChar.Search;
+            iconButton1.IconColor = Color.FromArgb(34, 85, 147);
+            iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconButton1.IconSize = 40;
+            iconButton1.ImageAlign = ContentAlignment.MiddleLeft;
+            iconButton1.Location = new Point(214, 46);
+            iconButton1.Name = "iconButton1";
+            iconButton1.Size = new Size(164, 43);
+            iconButton1.TabIndex = 2;
+            iconButton1.Text = "Buscar Cinta";
+            iconButton1.TextImageRelation = TextImageRelation.ImageBeforeText;
+            iconButton1.UseVisualStyleBackColor = true;
+            // 
             // InterfazCintasEnBoveda
             // 
             AutoScaleDimensions = new SizeF(96F, 96F);
             AutoScaleMode = AutoScaleMode.Dpi;
             ClientSize = new Size(1046, 649);
+            Controls.Add(panel8);
             Controls.Add(label4);
             Controls.Add(panel7);
             Controls.Add(panel2);
@@ -309,6 +376,10 @@
             panel7.ResumeLayout(false);
             panel7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox2).EndInit();
+            panel8.ResumeLayout(false);
+            panel8.PerformLayout();
+            panel9.ResumeLayout(false);
+            panel9.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -333,5 +404,10 @@
         private FontAwesome.Sharp.IconPictureBox iconPictureBox2;
         private Label LNombreCintaSeleccionada;
         private Label label4;
+        private Panel panel8;
+        private Panel panel9;
+        private FontAwesome.Sharp.IconButton iconButton1;
+        private TextBox textBox1;
+        private Label label5;
     }
 }

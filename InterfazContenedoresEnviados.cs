@@ -26,5 +26,9 @@ namespace TapeManager
             }
         }
 
+        private void panel13_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

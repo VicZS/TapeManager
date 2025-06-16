@@ -61,6 +61,11 @@
             LNombreCinta = new Label();
             iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
             panel19 = new Panel();
+            panel22 = new Panel();
+            iconButton1 = new FontAwesome.Sharp.IconButton();
+            textBox1 = new TextBox();
+            panel23 = new Panel();
+            label12 = new Label();
             label9 = new Label();
             panel20 = new Panel();
             panel21 = new Panel();
@@ -91,6 +96,8 @@
             panel15.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox2).BeginInit();
             panel19.SuspendLayout();
+            panel22.SuspendLayout();
+            panel23.SuspendLayout();
             panel20.SuspendLayout();
             panel21.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox3).BeginInit();
@@ -429,8 +436,9 @@
             panel13.Dock = DockStyle.Top;
             panel13.Location = new Point(636, 50);
             panel13.Name = "panel13";
-            panel13.Size = new Size(410, 245);
+            panel13.Size = new Size(410, 203);
             panel13.TabIndex = 8;
+            panel13.Paint += panel13_Paint;
             // 
             // label7
             // 
@@ -492,13 +500,72 @@
             // 
             // panel19
             // 
+            panel19.Controls.Add(panel22);
             panel19.Controls.Add(label9);
             panel19.Controls.Add(panel20);
             panel19.Dock = DockStyle.Top;
-            panel19.Location = new Point(636, 295);
+            panel19.Location = new Point(636, 253);
             panel19.Name = "panel19";
-            panel19.Size = new Size(410, 211);
+            panel19.Size = new Size(410, 264);
             panel19.TabIndex = 10;
+            // 
+            // panel22
+            // 
+            panel22.Controls.Add(iconButton1);
+            panel22.Controls.Add(textBox1);
+            panel22.Controls.Add(panel23);
+            panel22.Dock = DockStyle.Bottom;
+            panel22.Location = new Point(0, 174);
+            panel22.Name = "panel22";
+            panel22.Padding = new Padding(10, 0, 0, 5);
+            panel22.Size = new Size(410, 90);
+            panel22.TabIndex = 9;
+            // 
+            // iconButton1
+            // 
+            iconButton1.Dock = DockStyle.Left;
+            iconButton1.IconChar = FontAwesome.Sharp.IconChar.Search;
+            iconButton1.IconColor = Color.Gray;
+            iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconButton1.IconSize = 40;
+            iconButton1.ImageAlign = ContentAlignment.MiddleLeft;
+            iconButton1.Location = new Point(214, 46);
+            iconButton1.Name = "iconButton1";
+            iconButton1.Size = new Size(164, 39);
+            iconButton1.TabIndex = 2;
+            iconButton1.Text = "Buscar Cinta";
+            iconButton1.TextImageRelation = TextImageRelation.ImageBeforeText;
+            iconButton1.UseVisualStyleBackColor = true;
+            // 
+            // textBox1
+            // 
+            textBox1.CharacterCasing = CharacterCasing.Upper;
+            textBox1.Dock = DockStyle.Left;
+            textBox1.Font = new Font("Segoe UI Semibold", 18F, FontStyle.Bold);
+            textBox1.Location = new Point(10, 46);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(204, 39);
+            textBox1.TabIndex = 1;
+            // 
+            // panel23
+            // 
+            panel23.Controls.Add(label12);
+            panel23.Dock = DockStyle.Top;
+            panel23.Location = new Point(10, 0);
+            panel23.Name = "panel23";
+            panel23.Size = new Size(400, 46);
+            panel23.TabIndex = 0;
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.Dock = DockStyle.Bottom;
+            label12.Font = new Font("Segoe UI Semibold", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label12.Location = new Point(0, 14);
+            label12.Name = "label12";
+            label12.Size = new Size(150, 32);
+            label12.TabIndex = 7;
+            label12.Text = "Buscar Cinta";
             // 
             // label9
             // 
@@ -563,9 +630,10 @@
             panel16.Controls.Add(label11);
             panel16.Controls.Add(panel18);
             panel16.Controls.Add(panel17);
-            panel16.Location = new Point(636, 506);
+            panel16.Dock = DockStyle.Fill;
+            panel16.Location = new Point(636, 517);
             panel16.Name = "panel16";
-            panel16.Size = new Size(410, 143);
+            panel16.Size = new Size(410, 132);
             panel16.TabIndex = 11;
             // 
             // label11
@@ -605,7 +673,7 @@
             // 
             panel17.Controls.Add(btnGenerarReporteDelDia);
             panel17.Dock = DockStyle.Bottom;
-            panel17.Location = new Point(0, 88);
+            panel17.Location = new Point(0, 77);
             panel17.Name = "panel17";
             panel17.Padding = new Padding(0, 0, 10, 0);
             panel17.Size = new Size(410, 55);
@@ -672,6 +740,10 @@
             ((System.ComponentModel.ISupportInitialize)iconPictureBox2).EndInit();
             panel19.ResumeLayout(false);
             panel19.PerformLayout();
+            panel22.ResumeLayout(false);
+            panel22.PerformLayout();
+            panel23.ResumeLayout(false);
+            panel23.PerformLayout();
             panel20.ResumeLayout(false);
             panel21.ResumeLayout(false);
             panel21.PerformLayout();
@@ -729,5 +801,10 @@
         private FontAwesome.Sharp.IconButton btnGenerarReporteDelDia;
         private Label label11;
         private FontAwesome.Sharp.IconButton btnIrInterfazContenedoresCintasReutilizar;
+        private Panel panel22;
+        private FontAwesome.Sharp.IconButton iconButton1;
+        private TextBox textBox1;
+        private Panel panel23;
+        private Label label12;
     }
 }

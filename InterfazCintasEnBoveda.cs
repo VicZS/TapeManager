@@ -16,5 +16,12 @@ namespace TapeManager
         {
             InitializeComponent();
         }
+
+        private void btnGenerarReporteCintasEnBoveda_Click(object sender, EventArgs e)
+        {
+
+        }
+
+    
     }
 }
